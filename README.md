@@ -56,7 +56,7 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 - noto-fonts-extra
 
 **Obligatory Neofetch**
-- ~~~neofetch~~~
+- ~~neofetch~~
 - fastfetch (neofetch is apparently dead :( )`
 
 
