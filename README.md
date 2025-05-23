@@ -5,7 +5,7 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 ### Base Packages
 **Wifi and Bluetooth**
 - networkmanager
-- blueman (enable bluetooth.service at startup)
+- blueman (don't forget to `systemctl enable bluetooth.service`)
 
 **Audio**
 - pipewire
@@ -29,7 +29,7 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 - uwsm
 
 **Display Manager**
-- sddm (enable sddm.service at startup)
+- sddm (don't forget to `systemctl enable sddm.service`)
   
 **File Manager**
 - thunar
@@ -44,7 +44,7 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 - walker ***AUR**
 
 **Status Bar**
-- waybar
+- waybar (don't forget to `systemctl --user enable --now waybar.service`)
 
 **Terminal**
 - kitty (due to hyprland)
