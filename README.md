@@ -22,6 +22,9 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 - hyprshot (used for screenshots) ***AUR**
 - hyprswitch (used for alt tab gui) ***AUR**
 
+**Notification Daemon**
+- dunst
+
 **Session Manager**
 - uwsm
 
