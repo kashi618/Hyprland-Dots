@@ -8,3 +8,6 @@
 
 !.config/hypr/
 !.config/hypr/**/*
+
+!.config/walker
+!.config/walker/**/*
