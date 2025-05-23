@@ -19,6 +19,8 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 **Desktop Environment**
 - hyprland
 - hyprpaper (used for wallpaper)
+- hyprshot (used for screenshots)
+- hyprswitch (used for alt tab gui)
 
 **Session Manager**
 - uwsm
@@ -28,6 +30,9 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 
 **Backup Utility**
 - timeshift
+
+**Authentication Agent**
+- hyprpolkitagent
 
 **App Launcher**
 - walker ***AUR**
@@ -47,6 +52,8 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 **Obligatory Neofetch**
 - neofetch
 
+
+
 ### Misc Tools
 **File Extractor**
 - 7zip
@@ -60,7 +67,10 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 
 **File Partition and Similar**
 - filelight
--
+- gdisk
+
+
+
 ### Applications
 **Browser**
 - firefox
