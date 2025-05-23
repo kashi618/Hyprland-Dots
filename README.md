@@ -25,6 +25,9 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 **Session Manager**
 - uwsm
 
+**Display Manager**
+- sddm
+  
 **File Manager**
 - thunar
 
