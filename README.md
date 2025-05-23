@@ -19,8 +19,8 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 **Desktop Environment**
 - hyprland
 - hyprpaper (used for wallpaper)
-- hyprshot (used for screenshots)
-- hyprswitch (used for alt tab gui)
+- hyprshot (used for screenshots) ***AUR**
+- hyprswitch (used for alt tab gui) ***AUR**
 
 **Session Manager**
 - uwsm
@@ -53,13 +53,15 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 - noto-fonts-extra
 
 **Obligatory Neofetch**
-- neofetch
+- ~~~neofetch~~~
+- fastfetch (neofetch is apparently dead :( )`
 
 
 
 ### Misc Tools
 **File Extractor**
 - 7zip
+- unzip
 - file-roller
 
 **AUR Helper**
@@ -90,6 +92,9 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 - git
 - github-desktop-bin ***AUR**
 
+**LMM CLI Tool**
+- aichat
+
 **Other**
 - discord
 - spotify ***AUR**
@@ -97,3 +102,11 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 - qbittorrent
 - reaper
 - tldr (man, but tldr)
+
+## Useful Commands
+**Update System**
+`pacman -Syuu`
+**Remove Package**
+`pacman -Rsnc {PACKAGE_NAME}`
+**Make Package from AUR**
+`makepkg -sir`
