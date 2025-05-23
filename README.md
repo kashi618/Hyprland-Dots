@@ -5,7 +5,7 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 ### Base Packages
 **Wifi and Bluetooth**
 - networkmanager
-- blueman
+- blueman (enable bluetooth.service at startup)
 
 **Audio**
 - pipewire
@@ -29,7 +29,7 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 - uwsm
 
 **Display Manager**
-- sddm
+- sddm (enable sddm.service at startup)
   
 **File Manager**
 - thunar
