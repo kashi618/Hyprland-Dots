@@ -59,7 +59,7 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 - ~~neofetch~~
 - fastfetch (neofetch is apparently dead :( )`
 
-
+---
 
 ### Misc Tools
 **File Extractor**
@@ -77,7 +77,7 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 - filelight
 - gdisk
 
-
+---
 
 ### Applications
 **Browser**
@@ -104,12 +104,17 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 - spicetify-cli ***AUR**
 - qbittorrent
 - reaper
+- man
 - tldr (man, but tldr)
+
+---
 
 ## Useful Commands
 **Update System**
 `pacman -Syuu`
+
 **Remove Package**
 `pacman -Rsnc {PACKAGE_NAME}`
+
 **Make Package from AUR**
 `makepkg -sir`
