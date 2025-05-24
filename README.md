@@ -89,10 +89,10 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 - wine
 
 **Dev Tools & Text Editors**
-- code (visual studio code)
 - vim
 - nano
 - git
+- visual-studio-code-bin ***AUR**
 - github-desktop-bin ***AUR**
 
 **LMM CLI Tool**
