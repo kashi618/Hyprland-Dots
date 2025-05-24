@@ -34,6 +34,9 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 **File Manager**
 - thunar
 
+**USB Mounter**
+- udiskie
+
 **Backup Utility**
 - timeshift
 
