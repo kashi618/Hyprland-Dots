@@ -13,8 +13,6 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 - pipewire-alsa
 - pipewire-pulse
 - wireplumber
-- cable (used to configure pipewire) ***AUR**
-- pavucontrol (used to configure audio devices)
 
 **Desktop Environment**
 - hyprland
@@ -30,13 +28,6 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 
 **Display Manager**
 - sddm (don't forget to `systemctl enable sddm.service`)
-  
-**File Manager**
-- thunar
-- tumbler (for image thumbnails)
-
-**USB Mounter**
-- udiskie
 
 **Backup Utility**
 - timeshift
@@ -58,6 +49,7 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 - noto-fonts-cjk
 - noto-fonts-emoji
 - noto-fonts-extra
+- otf-font-awesome
 
 **Obligatory Neofetch**
 - ~~neofetch~~
@@ -66,12 +58,21 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 ---
 
 ### Misc Tools
+**Audio Related**
+- cable (used to configure pipewire) ***AUR**
+- pavucontrol (used to configure audio devices)
+
+**File Manager**
+- thunar
+- tumbler (for image thumbnails)
+- udiskie (auto mount USB)
+
 **File Extractor**
 - 7zip
 - unzip
 - file-roller
 
-**Video**
+**Videos**
 - vlc
 
 **AUR Helper**
@@ -93,7 +94,7 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 **Gaming on Linux**
 - lutris
 - steam
-- wine
+- wine (use lutris)
 
 **Dev Tools & Text Editors**
 - vim
