@@ -33,6 +33,7 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
   
 **File Manager**
 - thunar
+- tumbler (for image thumbnails)
 
 **USB Mounter**
 - udiskie
@@ -69,6 +70,9 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 - 7zip
 - unzip
 - file-roller
+
+**Video**
+- vlc
 
 **AUR Helper**
 - yay
