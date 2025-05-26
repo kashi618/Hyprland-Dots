@@ -5,14 +5,18 @@
 !.gitignore
 !.config/
 
-## Hyprland
+## Hyprland Config
 !.config/hypr/
 !.config/hypr/**/*
 
-## Walker (app launcher)
+## Walker Config
 !.config/walker
 !.config/walker/**/*
 
 ## Bash Config
 !.config/bashrc
 !.config/bashrc/**/*
+
+## Fastfetch Config
+!.config/fastfetch
+!.config/fastfetch/**/*
