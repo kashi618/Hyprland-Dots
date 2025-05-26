@@ -14,8 +14,7 @@
 !.config/walker/**/*
 
 ## Bash Config
-!.config/bashrc
-!.config/bashrc/**/*
+!.bashrc
 
 ## Fastfetch Config
 !.config/fastfetch
