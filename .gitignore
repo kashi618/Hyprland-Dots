@@ -3,11 +3,16 @@
 
 # Except These Files
 !.gitignore
-
 !.config/
 
+## Hyprland
 !.config/hypr/
 !.config/hypr/**/*
 
+## Walker (app launcher)
 !.config/walker
 !.config/walker/**/*
+
+## Bash Config
+!.config/bashrc
+!.config/bashrc/**/*
