@@ -13,9 +13,10 @@ alias grep='grep --color=auto'
 PS1="\e[95m╓─[\u@\h] -> {\e[96m\$PWD\e[95m} \n\e[95m╙─>\e[92m \$ \e[m"
 
 # Run fastfetch
+echo
 fastfetch
 
 # Run ls after cd
 cd() {
-  builtin cd "$@" && ls;
+  builtin cd "$@" && ls -a;
 }
