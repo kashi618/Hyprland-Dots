@@ -126,3 +126,6 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 
 **Make Package from AUR**
 `makepkg -sir`
+
+**List Packages Installed by Date** (fetches packages from logs)
+`awk '/\[ALPM\] installed/ { print $(NF-1) }' /var/log/pacman.log`
