@@ -36,3 +36,4 @@ cd() {
 
 # Alias's
 alias fm='ranger'
+alias aids='aichat -s'
