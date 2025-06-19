@@ -37,3 +37,4 @@ cd() {
 # Alias's
 alias fm='ranger'
 alias aids='aichat -s'
+alias sysupdate='yay -Syuu ; sudo pacman -Syuu ; sudo pacman -Qtdq | sudo pacman -Rsnc -'
