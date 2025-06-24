@@ -34,8 +34,8 @@ cd() {
 }
 
 
-# API Keys
-DEEPSEEK_API_KEY
+# Set API key
+source ~/Documents/EXPORT_API_KEYS.sh
 
 # Alias's
 alias fm='ranger'
