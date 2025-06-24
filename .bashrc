@@ -1,4 +1,4 @@
-#
+
 # ~/.bashrc
 #
 # If not running interactively, don't do anything
@@ -34,7 +34,12 @@ cd() {
 }
 
 
+# API Keys
+asd123asd
+
 # Alias's
 alias fm='ranger'
 alias aids='aichat -s'
-alias sysupdate='yay -Syuu ; sudo pacman -Syuu ; sudo pacman -Qtdq | sudo pacman -Rsnc -'
+alias sysup='yay -Syuu ; sudo pacman -Syuu ; sudo pacman -Qtdq | sudo pacman -Rsnc -'
+alias backup='sudo timeshift --create'
+
