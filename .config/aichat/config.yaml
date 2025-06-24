@@ -1,0 +1,10 @@
+model: deepseek:deepseek-chat
+
+clients:
+- type: openai-compatible
+  name: deepseek
+  api_base: https://api.deepseek.com/v1
+  api_key: os.environ.get("DEEPSEEK_API_KEY")
+  models:
+    - name: deepseek-chat
+    - name: deepseek-reasoner

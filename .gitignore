@@ -19,3 +19,8 @@
 ## Fastfetch Config
 !.config/fastfetch
 !.config/fastfetch/**/*
+
+## sigoden/aichat Config
+!.config/aichat
+!.config/aichat/**/*
+
