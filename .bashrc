@@ -35,7 +35,7 @@ cd() {
 
 
 # API Keys
-asd123asd
+DEEPSEEK_API_KEY
 
 # Alias's
 alias fm='ranger'
