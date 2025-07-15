@@ -33,13 +33,16 @@ cd() {
   builtin cd "$@" && ls -a;
 }
 
-
 # Set API key
 source ~/Documents/EXPORT_API_KEYS.sh
+
+# Environment Variables
+MANGOHUD=1   # Runs mangohud for all VULKAN games
 
 # Alias's
 alias fm='ranger'
 alias aids='aichat -s'
-alias sysup='yay -Syuu ; sudo pacman -Syuu ; sudo pacman -Qtdq | sudo pacman -Rsnc -'
+alias sysup='sudo pacman -Syu && yay -Syu && sudo pacman -Rsnc $(pacman -Qtdq)'
 alias backup='sudo timeshift --create'
+alias rshp='echo "shutting down hotspot" && nmcli connection down PCHOTSPOT && echo "starting up hotspot" && nmcli connection up PCHOTSPOT'
 
