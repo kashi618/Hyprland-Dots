@@ -98,6 +98,8 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 - lutris
 - steam
 - wine (use lutris)
+- mangohud (fps counter)
+- goverlay (mangohud editor)
 
 **Dev Tools & Text Editors**
 - vim
