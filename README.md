@@ -75,6 +75,9 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 **Videos**
 - vlc
 
+**GTK3 Theme**
+- nwg-look (for dark theme in thunar, etc)
+
 **AUR Helper**
 - yay
 
