@@ -43,6 +43,5 @@ MANGOHUD=1   # Runs mangohud for all VULKAN games
 alias fm='ranger'
 alias aids='aichat -s'
 alias sysup='sudo pacman -Syu && yay -Syu && sudo pacman -Rsnc $(pacman -Qtdq)'
+alias rmStupid='sudo pacman -Rsnc $(pacman -Qtdq)'
 alias backup='sudo timeshift --create'
-alias rshp='echo "shutting down hotspot" && nmcli connection down PCHOTSPOT && echo "starting up hotspot" && nmcli connection up PCHOTSPOT'
-
