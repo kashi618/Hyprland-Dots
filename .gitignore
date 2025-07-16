@@ -1,6 +1,9 @@
 # Ignore Everything
 *
 
+# Also Ignore This
+.config/hypr/nvidia.conf
+
 # Except These Files
 !.gitignore
 !.config/
