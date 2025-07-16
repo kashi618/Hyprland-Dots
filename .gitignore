@@ -1,9 +1,6 @@
 # Ignore Everything
 *
 
-# Also Ignore This
-.config/hypr/nvidia.conf
-
 # Except These Files
 !.gitignore
 !.config/
@@ -27,3 +24,5 @@
 !.config/aichat
 !.config/aichat/**/*
 
+# Also Ignore This
+.config/hypr/nvidia.conf
