@@ -34,6 +34,7 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 
 **Authentication Agent**
 - hyprpolkitagent
+- polkit
 
 **App Launcher**
 - walker ***AUR**
@@ -71,6 +72,9 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 - 7zip
 - unzip
 - file-roller
+- ark
+
+*NOTE: Haven't decided on one that fits all my needs, so I have quite a few*
 
 **Videos**
 - vlc
@@ -97,9 +101,13 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 **Gaming on Linux**
 - lutris
 - steam
-- wine (use lutris)
+
 - mangohud (fps counter)
 - goverlay (mangohud editor)
+
+- wine
+- winetricks
+- proton-ge-custom-bin
 
 **Dev Tools & Text Editors**
 - vim
@@ -119,6 +127,7 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 - reaper
 - man
 - tldr (man, but tldr)
+- screenkey (typing)
 
 ---
 
