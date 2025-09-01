@@ -69,6 +69,7 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 - thunar
 - tumbler (for image thumbnails)
 - udiskie (auto mount USB)
+- android-file-transfer
 
 **File Extractor**
 - 7zip
