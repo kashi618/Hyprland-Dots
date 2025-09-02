@@ -123,14 +123,17 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 **LMM CLI Tool**
 - aichat
 
-**Other**
+**Other Tools**
+- man
+- tldr (man, but tldr)
+- ascii
+
+**Misc**
 - discord
 - spotify ***AUR**
 - spicetify-cli ***AUR**
 - qbittorrent
 - reaper
-- man
-- tldr (man, but tldr)
 - screenkey (typing)
 
 ---
