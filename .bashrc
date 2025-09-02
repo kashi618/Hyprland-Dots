@@ -1,4 +1,3 @@
-
 # ~/.bashrc
 #
 # If not running interactively, don't do anything
@@ -37,14 +36,14 @@ cd() {
 source ~/Documents/EXPORT_API_KEYS.sh
 
 # Environment Variables
-MANGOHUD=1   # Runs mangohud for all VULKAN games
+#export MANGOHUD=1   # Runs mangohud for all VULKAN games
 
 # Alias's
 alias fm='ranger'
 alias aids='aichat -s'
-alias sysup='sudo pacman -Syu && yay -Syu && sudo pacman -Rsnc $(pacman -Qtdq)'
+alias sysup='sudo pacman -Syu && read -p "Do you want to run yay -Syu? (y/N): " choice; if [[ $choice == [Yy]* ]]; then yay -Syu; fi; sudo pacman -Rsnc $(pacman -Qtdq)'
 alias rmStupid='sudo pacman -Rsnc $(pacman -Qtdq)'
 alias backup='sudo timeshift --create'
-alias nf='fastfetch'
+alias ff='fastfetch'
 alias dup='sudo pacman -S discord'
 alias euro='echo -n '€' | wl-copy && echo Copied € to clipboard'
