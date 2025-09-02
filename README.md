@@ -5,6 +5,8 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 ### Base Packages
 **Wifi and Bluetooth**
 - networkmanager
+  - nm-connection-editor
+  - network-manager-applet
 - blueman (don't forget to `systemctl enable bluetooth.service`)
 
 **Audio**
@@ -67,6 +69,7 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 - thunar
 - tumbler (for image thumbnails)
 - udiskie (auto mount USB)
+- android-file-transfer
 
 **File Extractor**
 - 7zip
@@ -78,6 +81,7 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 
 **Videos**
 - vlc
+- vlc-plugins-all
 
 **GTK3 Theme**
 - nwg-look (for dark theme in thunar, etc)
