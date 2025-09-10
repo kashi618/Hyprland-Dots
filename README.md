@@ -87,7 +87,7 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 - nwg-look (for dark theme in thunar, etc)
 
 **AUR Helper**
-- yay
+- yay ***AUR**
 
 **Task Manager**
 - btop
@@ -130,7 +130,7 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 
 **Misc**
 - discord
-- spotify ***AUR**
+- spotify-launcher
 - spicetify-cli ***AUR**
 - qbittorrent
 - reaper
