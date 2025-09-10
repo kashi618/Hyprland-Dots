@@ -110,6 +110,7 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 
 - mangohud (fps counter)
 - goverlay (mangohud editor)
+- vulkan-tools
 
 - wine
 - winetricks
