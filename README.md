@@ -7,6 +7,7 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 - networkmanager
   - nm-connection-editor
   - network-manager-applet
+- linux-wifi-hotspot ***AUR*
 - blueman (don't forget to `systemctl enable bluetooth.service`)
 
 **Audio**
