@@ -153,3 +153,6 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 
 **List Packages Installed by Date** (fetches packages from logs)
 `awk '/\[ALPM\] installed/ { print $(NF-1) }' /var/log/pacman.log`
+
+**Sync System Time (if CMOS dies)**
+`sudo timedatectl set-ntp true`
