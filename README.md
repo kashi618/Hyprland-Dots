@@ -35,9 +35,10 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 **Backup Utility**
 - timeshift
 
-**Authentication Agent**
+**Authentication Agent/secrets manager**
 - hyprpolkitagent
 - polkit
+- gnome-keyring
 
 **App Launcher**
 - walker ***AUR**
