@@ -4,7 +4,7 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 ## Packages
 ### Base Packages
 **Wifi and Bluetooth**
-- networkmanager
+- networkmanager (don't forget to `systemctl enable NetworkManager.service`)
   - nm-connection-editor
   - network-manager-applet
 - linux-wifi-hotspot ***AUR*
