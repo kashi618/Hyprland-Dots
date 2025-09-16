@@ -31,3 +31,7 @@
 
 ## Discord (disable mandatory updates)
 !.config/discord/settings.json
+
+## List of Packages
+!Hyprland-Dots-Install-AUR.txt
+!Hyprland-Dots-Install.txt
