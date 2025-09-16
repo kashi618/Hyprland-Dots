@@ -7,6 +7,7 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 - networkmanager
   - nm-connection-editor
   - network-manager-applet
+- linux-wifi-hotspot ***AUR*
 - blueman (don't forget to `systemctl enable bluetooth.service`)
 
 **Audio**
@@ -34,9 +35,10 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 **Backup Utility**
 - timeshift
 
-**Authentication Agent**
+**Authentication Agent/secrets manager**
 - hyprpolkitagent
 - polkit
+- gnome-keyring
 
 **App Launcher**
 - walker ***AUR**
@@ -87,7 +89,7 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 - nwg-look (for dark theme in thunar, etc)
 
 **AUR Helper**
-- yay
+- yay ***AUR**
 
 **Task Manager**
 - btop
@@ -108,6 +110,7 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 
 - mangohud (fps counter)
 - goverlay (mangohud editor)
+- vulkan-tools
 
 - wine
 - winetricks
@@ -130,7 +133,8 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 
 **Misc**
 - discord
-- spotify ***AUR**
+  - hyprland-xdg-desktop-portal (screenshare) 
+- spotify-launcher
 - spicetify-cli ***AUR**
 - qbittorrent
 - reaper
@@ -150,3 +154,6 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 
 **List Packages Installed by Date** (fetches packages from logs)
 `awk '/\[ALPM\] installed/ { print $(NF-1) }' /var/log/pacman.log`
+
+**Sync System Time (if CMOS dies)**
+`sudo timedatectl set-ntp true`
