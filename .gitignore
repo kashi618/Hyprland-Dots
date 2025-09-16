@@ -24,6 +24,10 @@
 !.config/aichat
 !.config/aichat/**/*
 
-# Also Ignore This
-.config/hypr/nvidia.conf
-.config/hypr/nvidia.conf
+## Dunst Config
+!.config/dunst
+!.config/dunst/**/*
+
+
+## Discord (disable mandatory updates)
+!.config/discord/settings.json
