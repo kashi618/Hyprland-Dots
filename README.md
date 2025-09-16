@@ -33,7 +33,8 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 - sddm (don't forget to `systemctl enable sddm.service`)
 
 **Backup Utility**
-- timeshift
+- timeshift (timeshift-launcher for gui)
+  - xorg-xhost
 
 **Authentication Agent/secrets manager**
 - hyprpolkitagent
