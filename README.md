@@ -133,7 +133,7 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 
 **Misc**
 - discord
-  - hyprland-xdg-desktop-portal (screenshare) 
+  - xdg-desktop-portal-hyprland  (screenshare) 
 - spotify-launcher
 - spicetify-cli ***AUR**
 - qbittorrent
