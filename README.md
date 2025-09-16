@@ -115,7 +115,7 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 
 - wine
 - winetricks
-- proton-ge-custom-bin
+- protonup-qt (used for proton-ge) ***appimage**
 
 **Dev Tools & Text Editors**
 - vim
