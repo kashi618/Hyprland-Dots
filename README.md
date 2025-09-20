@@ -116,6 +116,7 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 - wine
 - winetricks
 - protonup-qt (used for proton-ge and steamtinkerlaunch) ***AUR**
+- steamtinkerlaunch (used for dependencies) ***AUR**
 
 **Dev Tools & Text Editors**
 - vim
