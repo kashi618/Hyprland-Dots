@@ -9,9 +9,9 @@
 !.config/hypr/
 !.config/hypr/**/*
 
-## Walker Config
-!.config/walker
-!.config/walker/**/*
+## Waybar Config
+!.config/warbar
+!.config/warbar/**/*
 
 ## Bash Config
 !.bashrc
