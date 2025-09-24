@@ -56,10 +56,15 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 - noto-fonts-emoji
 - noto-fonts-extra
 - otf-font-awesome
+- ttf-nerd-fonts-symbols
+- ttf-nerd-fonts-symbols-common
 
 **Obligatory Neofetch**
 - ~~neofetch~~
 - fastfetch (neofetch is apparently dead :( )`
+
+**Battery Saving** (laptop)
+- laptop-mode-tools ***AUR** (check installation on wiki page)
 
 ---
 
@@ -141,7 +146,7 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 - qbittorrent
 - reaper
 - screenkey (typing)
-
+- `ILoveCandy` in `/etc/pacman.conf [options]` ;)
 ---
 
 ## Useful Commands
