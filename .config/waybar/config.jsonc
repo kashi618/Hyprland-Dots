@@ -132,7 +132,7 @@
 
 
   "clock": {
-    "format": "{:%Y/%m/%d   %H:%M}",
+    "format": "({:%Y/%m/%d) %H:%M}",
     "interval": 1,
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
