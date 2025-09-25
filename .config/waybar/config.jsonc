@@ -1,0 +1,153 @@
+{
+  "layer": "top",
+  "position": "top",
+  "margin-top": 0,
+  "margin-bottom": -6,
+  "height": 35,
+  "spacing": 0,
+
+
+
+// -------------------------------------| MODULE LAYOUT |-------------------------------------------------
+  
+// -------------------------------------- LEFT MODULE ----------------------------------------------------
+  "modules-left": [
+                  "custom/spacer2",
+    "cpu",    
+                  "custom/spacer2",
+    "memory",
+                  "custom/spacer2",
+    "pulseaudio",
+                  "custom/spacer2",
+    "disk" 
+  ],
+
+// -------------------------------------- CENTER MODULE --------------------------------------------------
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+  
+// -------------------------------------- RIGHT MODULE --------------------------------------------------
+  "modules-right": [
+    "battery",
+    "custom/spacer2",
+    "custom/spacer1",
+    "clock",
+    "custom/spacer2"
+  ],
+
+
+// -------------------------------------| MODULE CONFIG |------------------------------------------------ 
+
+// -------------------------------------- GENERAL -------------------------------------------------------
+  "custom/spacer1": {
+    "format": " "
+  },
+  "custom/spacer2": {
+    "format": "  "
+  },
+
+
+// -------------------------------------- LEFT MODULE --------------------------------------------------- 
+  "cpu": {
+    "format": "{icon} {usage}%",
+    "format-icons": ""
+  }, // END "cpu"
+
+  "memory": {
+    "format": "{icon} {used}gb - {percentage}%",
+    "format-icons": ""
+  }, // END "memory"
+  
+  "disk": {
+    "interval": 60,
+    "tooltip": true
+  }, // END "disk"
+
+
+
+// -------------------------------------- MIDDLE MODULE -------------------------------------------------
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "1": "<span color=\"#ff0000\">󰊠</span>",
+      "2": "<span color=\"#f2ff00\"></span>",
+      "3": "<span color=\"#FFB8FF\">󰊠</span>",
+      "4": "<span color=\"#f2ff00\"></span>",
+      "5": "<span color=\"#1793D1\">󰣇</span>",
+      "6": "<span color=\"#f2ff00\"></span>",
+      "7": "<span color=\"#00FFFF\">󰊠</span>",
+      "8": "<span color=\"#f2ff00\"></span>",
+      "9": "<span color=\"#FFB852\">󰊠</span>",
+      "active": "<span color=\"#fff200\">󰮯</span>",
+      "default": "<span color=\"#ff0000\">g</span>",
+      "urgent": "<span color=\"#ff0000\">p</span>"
+    },
+    "on-click": "activate",
+    "all-outputs": false,
+    "persistent-workspaces": {
+      "*": 9
+    }
+  }, // END "hyprland/workspaces"
+
+// -------------------------------------- RIGHT MODULE --------------------------------------------------
+  "battery": {
+    "format": "{icon} [<span color=\"#df61ff\">{capacity}%</span>, <span color=\"#4accff\">{power}w</span>, <span color=\"#03fc7f\">{time}</span>]",
+    "format-time": "{H}h {M}m",
+    "format-icons": {
+      "default": [
+        "<span color=\"#FF0000\">󰂃</span>",
+        "<span color=\"#FF2A00\">󰁺</span>",
+        "<span color=\"#FF5500\">󰁻</span>",
+        "<span color=\"#FF8000\">󰁼</span>",
+        "<span color=\"#FFAA00\">󰁽</span>",
+        "<span color=\"#FFD500\">󰁾</span>",
+        "<span color=\"#FFFF00\">󰁿</span>",
+        "<span color=\"#D4FF00\">󰂀</span>",
+        "<span color=\"#AAFF00\">󰂁</span>",
+        "<span color=\"#55FF00\">󰂂</span>"
+      ],
+      "charging": [
+        "<span color=\"#FF0000\">󰢜</span>",
+        "<span color=\"#FF2A00\">󰢜</span>",
+        "<span color=\"#FF5500\">󰂆</span>",
+        "<span color=\"#FF8000\">󰂇</span>",
+        "<span color=\"#FFAA00\">󰂈</span>",
+        "<span color=\"#FFD500\">󰢝</span>",
+        "<span color=\"#FFFF00\">󰂉</span>",
+        "<span color=\"#D4FF00\">󰢞</span>",
+        "<span color=\"#AAFF00\">󰂊</span>",
+        "<span color=\"#55FF00\">󰂋</span>"
+      ]
+    },
+    "format-full": "<span color=\"#00FF00>󱟢</span>",
+    "interval": 1,
+    "states": {
+      "warning": 20,
+      "critical": 10
+    },
+    "tooltip": false
+  }, // END "battery"
+
+
+
+  "clock": {
+    "format": "{:%Y/%m/%d   %H:%M}",
+    "interval": 1,
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode"          : "year",
+      "mode-mon-col"  : 3,
+      "weeks-pos"     : "right",
+      "on-scroll"     : 1,
+      "format": {
+        "months"  : "<span color='#ffead3'><b>{}</b></span>",
+        "days"    : "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks"   : "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today"   : "<span color='#ff6699'><b><u>{}</u></b></span>"
+      }
+    }
+  } // END "clock"
+
+} // END config.jsonc
