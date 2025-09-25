@@ -16,6 +16,10 @@
 ## Bash Config
 !.bashrc
 
+## Kitty Terminal Config
+!.config/kitty
+!.config/kitty/**/*
+
 ## Fastfetch Config
 !.config/fastfetch
 !.config/fastfetch/**/*
@@ -27,7 +31,6 @@
 ## Dunst Config
 !.config/dunst
 !.config/dunst/**/*
-
 
 ## Discord (disable mandatory updates)
 !.config/discord/settings.json
