@@ -55,9 +55,8 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 - noto-fonts-cjk
 - noto-fonts-emoji
 - noto-fonts-extra
-- otf-font-awesome
-- ttf-nerd-fonts-symbols
-- ttf-nerd-fonts-symbols-common
+- adwaita-fonts
+- ttf-jetbrains-mono-nerd
 
 **Obligatory Neofetch**
 - ~~neofetch~~
