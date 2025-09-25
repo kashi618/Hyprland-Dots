@@ -10,8 +10,8 @@
 !.config/hypr/**/*
 
 ## Waybar Config
-!.config/warbar
-!.config/warbar/**/*
+!.config/waybar
+!.config/waybar/**/*
 
 ## Bash Config
 !.bashrc
@@ -34,6 +34,7 @@
 
 ## Discord (disable mandatory updates)
 !.config/discord/settings.json
+!.config/discord/**/*
 
 ## List of Packages
 !Hyprland-Dots-Install-AUR.txt
