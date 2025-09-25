@@ -12,13 +12,13 @@
   
 // -------------------------------------- LEFT MODULE ----------------------------------------------------
   "modules-left": [
-                  "custom/spacer2",
+                    "custom/spacer1",
     "cpu",    
-                  "custom/spacer2",
+                    "custom/spacer2",
     "memory",
-                  "custom/spacer2",
+                    "custom/spacer2",
     "pulseaudio",
-                  "custom/spacer2",
+                    "custom/spacer2",
     "disk" 
   ],
 
@@ -30,10 +30,9 @@
 // -------------------------------------- RIGHT MODULE --------------------------------------------------
   "modules-right": [
     "battery",
-    "custom/spacer2",
-    "custom/spacer1",
+                    "custom/spacer2",
     "clock",
-    "custom/spacer2"
+                    "custom/spacer1"
   ],
 
 
@@ -92,7 +91,8 @@
 
 // -------------------------------------- RIGHT MODULE --------------------------------------------------
   "battery": {
-    "format": "{icon} [<span color=\"#df61ff\">{capacity}%</span>, <span color=\"#4accff\">{power}w</span>, <span color=\"#03fc7f\">{time}</span>]",
+    "format":          "{icon} [<span color=\"#df61ff\">{capacity}%</span>, <span color=\"#4accff\">{power:.2f}w</span>, <span color=\"#03fc7f\">{time}</span>]",
+    "format-charging": "{icon} [<span color=\"#03fc7f\">{capacity}%</span>, <span color=\"#03fc7f\">{power:.2f}w</span>, <span color=\"#03fc7f\">{time}</span>]",
     "format-time": "{H}h {M}m",
     "format-icons": {
       "default": [
