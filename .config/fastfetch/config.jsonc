@@ -10,16 +10,15 @@
   },
 
   "modules": [
-    "break",
-
     "separator",
     "title",
     "separator",
-    "break",
 
+    "break",
     "os",
     "kernel",
     "host",
+    
     "break",
 
     "cpu",
@@ -27,17 +26,23 @@
     "memory",
     "swap",
     "battery",
+
+    "break",     
+    "separator",
     "break",
 
     "wm",
     "shell",
     "terminal",
     "packages",
+ 
     "break",
 
     "disk",
-
     "break",
-    "colors"
+
+    "separator",
+    "colors",
+    "separator"
   ]
 }

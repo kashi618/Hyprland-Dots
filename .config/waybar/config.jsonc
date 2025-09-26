@@ -54,7 +54,7 @@
   }, // END "cpu"
 
   "memory": {
-    "format": "{icon} {used}gb - {percentage}%",
+    "format": "{icon} [{used:.2f}gb - {percentage}%]",
     "format-icons": ""
   }, // END "memory"
   
@@ -69,19 +69,19 @@
   "hyprland/workspaces": {
     "format": "{icon}",
     "format-icons": {
-      "1": "<span color=\"#ff0000\">󰊠</span>",
-      "2": "<span color=\"#f2ff00\"></span>",
-      "3": "<span color=\"#FFB8FF\">󰊠</span>",
-      "4": "<span color=\"#f2ff00\"></span>",
-      "5": "<span color=\"#1793D1\">󰣇</span>",
-      "6": "<span color=\"#f2ff00\"></span>",
-      "7": "<span color=\"#00FFFF\">󰊠</span>",
-      "8": "<span color=\"#f2ff00\"></span>",
-      "9": "<span color=\"#FFB852\">󰊠</span>",
-      "active": "<span color=\"#fff200\">󰮯</span>",
-      "default": "<span color=\"#ff0000\">g</span>",
-      "urgent": "<span color=\"#ff0000\">p</span>"
-    },
+      "1": "󰊠",
+      "2": "",
+      "3": "󰊠",
+      "4": "",
+      "5": "󰣇",
+      "6": "",
+      "7": "󰊠",
+      "8": "",
+      "9": "󰊠",
+      "active":  "󰮯",
+      "default": "",
+      "urgent":  "U"
+   },
     "on-click": "activate",
     "all-outputs": false,
     "persistent-workspaces": {
