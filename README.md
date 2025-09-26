@@ -145,6 +145,7 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 - qbittorrent
 - reaper
 - screenkey (typing)
+- notion-calendar-electrion ***AUR**
 - `ILoveCandy` in `/etc/pacman.conf [options]` ;)
 ---
 
