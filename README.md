@@ -66,6 +66,9 @@ est. September 9th 2024
 **Battery Saving** (laptop)
 - laptop-mode-tools ***AUR** (check installation on wiki page)
 
+**Brightness** (laptop)
+- brightnessctl
+
 ---
 
 ### Misc Tools
