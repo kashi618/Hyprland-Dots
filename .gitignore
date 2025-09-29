@@ -16,6 +16,10 @@
 ## Bash Config
 !.bashrc
 
+## Hyprshell
+!.config/hyprshell
+!.config/hyprshell/**/*
+
 ## Kitty Terminal Config
 !.config/kitty
 !.config/kitty/**/*
