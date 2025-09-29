@@ -26,6 +26,8 @@
   
 // -------------------------------------- RIGHT MODULE LAYOUT--------------------------------------------------
   "modules-right": [
+    "backlight",
+                    "custom/spacer2",
     "battery",
                     "custom/spacer2",
     "clock",
@@ -46,13 +48,14 @@
 
 // -------------------------------------- LEFT MODULE CONFIG --------------------------------------------------- 
   "cpu": {
-    "format": "{icon} [{usage}% - {avg_frequency}ghz]",
+    "format": "{icon} [{usage:02}% - {avg_frequency:04.2f}ghz]",
     "format-icons": "",
-    "interval": 2
+    "interval": 2,
+    "tooltip": true
   }, // END "cpu"
 
   "memory": {
-    "format": "{icon} [{used:.2f}gb - {percentage}%]",
+    "format": "{icon} [{used:05.2f}gb - {percentage:3}%]",
     "format-icons": "",
     "interval": 2
   }, // END "memory"
@@ -91,10 +94,19 @@
   }, // END "hyprland/workspaces"
 
 // -------------------------------------- RIGHT MODULE CONFIG --------------------------------------------------
+  "backlight": {
+    "format": "{icon} [{percent:02}]%",
+    "format-icons": [
+      "<span color=\"#808080\">󰃟</span>",
+      "<span color=\"#ffd726\">󰃟</span>"
+    ]
+  }, // END "backlight"
+
+
   "battery": {
     "format":          "{icon} [<span color=\"#FFFF00\">{capacity}%</span>, <span color=\"#4accff\">{power:.2f}w</span>, <span color=\"#03fc7f\">{time}:empty</span>]",
     "format-charging": "{icon} [<span color=\"#FFFF00\">{capacity}%</span>, <span color=\"#03fc7f\">{power:.2f}w</span>, <span color=\"#03fc7f\">{time}:full</span>]",
-    "format-time": "{H}h{M}m",
+    "format-time": "{H:02}h{M:02}m",
     "format-icons": {
       "default": [
         "<span color=\"#FF0000\">󰂃</span>",
@@ -110,7 +122,6 @@
       ],
       "charging": [
         "<span color=\"#00FF00\">󰢜</span>",
-        "<span color=\"#00FF00\">󰢜</span>",
         "<span color=\"#00FF00\">󰂆</span>",
         "<span color=\"#00FF00\">󰂇</span>",
         "<span color=\"#00FF00\">󰂈</span>",
@@ -118,7 +129,7 @@
         "<span color=\"#00FF00\">󰂉</span>",
         "<span color=\"#00FF00\">󰢞</span>",
         "<span color=\"#00FF00\">󰂊</span>",
-        "<span color=\"#00FF00\">󰂋</span>"
+        "<span color=\"#00FF00\">󰂋</span>",
       ]
     },
     "format-full": "<span color=\"#00FF00>󱟢</span>",
@@ -133,7 +144,7 @@
 
 
   "clock": {
-    "format": "<span size=\"17000\">󰃭</span> [{:%Y/%m/%d]  [%H:%M}]",
+    "format": "󰃭 [{:%Y/%m/%d]   [%H:%M}]",
     "interval": 1,
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
