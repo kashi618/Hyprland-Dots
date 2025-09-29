@@ -23,8 +23,7 @@
 #workspaces button.urgent  {color: #ff0000;}       /* -> urgent     */
 
 
-/* Make empty workspaces grey */
-#workspaces button.empty {color: #808080;}
-
-/* ----- CPU -----*/
-
+/* ----- Clock -----*/
+#clock {
+  
+}

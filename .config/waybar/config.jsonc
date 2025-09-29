@@ -7,27 +7,24 @@
   "spacing": 0,
 
 
-
 // -------------------------------------| MODULE LAYOUT |-------------------------------------------------
   
-// -------------------------------------- LEFT MODULE ----------------------------------------------------
+// -------------------------------------- LEFT MODULE LAYOUT----------------------------------------------------
   "modules-left": [
                     "custom/spacer1",
     "cpu",    
                     "custom/spacer2",
     "memory",
                     "custom/spacer2",
-    "pulseaudio",
-                    "custom/spacer2",
     "disk" 
   ],
 
-// -------------------------------------- CENTER MODULE --------------------------------------------------
+// -------------------------------------- CENTER MODULE LAYOUT--------------------------------------------------
   "modules-center": [
     "hyprland/workspaces"
   ],
   
-// -------------------------------------- RIGHT MODULE --------------------------------------------------
+// -------------------------------------- RIGHT MODULE LAYOUT--------------------------------------------------
   "modules-right": [
     "battery",
                     "custom/spacer2",
@@ -38,34 +35,38 @@
 
 // -------------------------------------| MODULE CONFIG |------------------------------------------------ 
 
-// -------------------------------------- GENERAL -------------------------------------------------------
+// -------------------------------------- GENERAL CONFIG -------------------------------------------------------
   "custom/spacer1": {
     "format": " "
-  },
+  }, // END "custom/spacer2"
   "custom/spacer2": {
     "format": "  "
-  },
+  }, // END "custom/spacer2"
 
 
-// -------------------------------------- LEFT MODULE --------------------------------------------------- 
+// -------------------------------------- LEFT MODULE CONFIG --------------------------------------------------- 
   "cpu": {
-    "format": "{icon} {usage}%",
-    "format-icons": ""
+    "format": "{icon} [{usage}% - {avg_frequency}ghz]",
+    "format-icons": "",
+    "interval": 2
   }, // END "cpu"
 
   "memory": {
     "format": "{icon} [{used:.2f}gb - {percentage}%]",
-    "format-icons": ""
+    "format-icons": "",
+    "interval": 2
   }, // END "memory"
   
   "disk": {
+    "format": "{icon}",
+    "format-icons": "",
     "interval": 60,
     "tooltip": true
   }, // END "disk"
 
 
 
-// -------------------------------------- MIDDLE MODULE -------------------------------------------------
+// -------------------------------------- MIDDLE MODULE CONFIG -------------------------------------------------
   "hyprland/workspaces": {
     "format": "{icon}",
     "format-icons": {
@@ -89,11 +90,11 @@
     }
   }, // END "hyprland/workspaces"
 
-// -------------------------------------- RIGHT MODULE --------------------------------------------------
+// -------------------------------------- RIGHT MODULE CONFIG --------------------------------------------------
   "battery": {
-    "format":          "{icon} [<span color=\"#df61ff\">{capacity}%</span>, <span color=\"#4accff\">{power:.2f}w</span>, <span color=\"#03fc7f\">{time}</span>]",
-    "format-charging": "{icon} [<span color=\"#03fc7f\">{capacity}%</span>, <span color=\"#03fc7f\">{power:.2f}w</span>, <span color=\"#03fc7f\">{time}</span>]",
-    "format-time": "{H}h {M}m",
+    "format":          "{icon} [<span color=\"#FFFF00\">{capacity}%</span>, <span color=\"#4accff\">{power:.2f}w</span>, <span color=\"#03fc7f\">{time}:empty</span>]",
+    "format-charging": "{icon} [<span color=\"#FFFF00\">{capacity}%</span>, <span color=\"#03fc7f\">{power:.2f}w</span>, <span color=\"#03fc7f\">{time}:full</span>]",
+    "format-time": "{H}h{M}m",
     "format-icons": {
       "default": [
         "<span color=\"#FF0000\">󰂃</span>",
@@ -108,16 +109,16 @@
         "<span color=\"#55FF00\">󰂂</span>"
       ],
       "charging": [
-        "<span color=\"#FF0000\">󰢜</span>",
-        "<span color=\"#FF2A00\">󰢜</span>",
-        "<span color=\"#FF5500\">󰂆</span>",
-        "<span color=\"#FF8000\">󰂇</span>",
-        "<span color=\"#FFAA00\">󰂈</span>",
-        "<span color=\"#FFD500\">󰢝</span>",
-        "<span color=\"#FFFF00\">󰂉</span>",
-        "<span color=\"#D4FF00\">󰢞</span>",
-        "<span color=\"#AAFF00\">󰂊</span>",
-        "<span color=\"#55FF00\">󰂋</span>"
+        "<span color=\"#00FF00\">󰢜</span>",
+        "<span color=\"#00FF00\">󰢜</span>",
+        "<span color=\"#00FF00\">󰂆</span>",
+        "<span color=\"#00FF00\">󰂇</span>",
+        "<span color=\"#00FF00\">󰂈</span>",
+        "<span color=\"#00FF00\">󰢝</span>",
+        "<span color=\"#00FF00\">󰂉</span>",
+        "<span color=\"#00FF00\">󰢞</span>",
+        "<span color=\"#00FF00\">󰂊</span>",
+        "<span color=\"#00FF00\">󰂋</span>"
       ]
     },
     "format-full": "<span color=\"#00FF00>󱟢</span>",
@@ -132,7 +133,7 @@
 
 
   "clock": {
-    "format": "({:%Y/%m/%d) %H:%M}",
+    "format": "<span size=\"17000\">󰃭</span> [{:%Y/%m/%d]  [%H:%M}]",
     "interval": 1,
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
