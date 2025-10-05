@@ -26,9 +26,9 @@
   
 // -------------------------------------- RIGHT MODULE LAYOUT--------------------------------------------------
   "modules-right": [
-    "backlight",
-                    "custom/spacer2",
     "battery",
+                    "custom/spacer2",
+    "backlight",
                     "custom/spacer2",
     "clock",
                     "custom/spacer1"
@@ -48,14 +48,14 @@
 
 // -------------------------------------- LEFT MODULE CONFIG --------------------------------------------------- 
   "cpu": {
-    "format": "{icon} [{usage:02}% - {avg_frequency:04.2f}ghz]",
+    "format": "{icon} [{usage:2}% - {avg_frequency:04.2f}ghz]",
     "format-icons": "",
     "interval": 2,
     "tooltip": true
   }, // END "cpu"
 
   "memory": {
-    "format": "{icon} [{used:05.2f}gb - {percentage:3}%]",
+    "format": "{icon} [{used:5.2f}gb - {percentage:2}%]",
     "format-icons": "",
     "interval": 2
   }, // END "memory"
@@ -94,14 +94,6 @@
   }, // END "hyprland/workspaces"
 
 // -------------------------------------- RIGHT MODULE CONFIG --------------------------------------------------
-  "backlight": {
-    "format": "{icon} [{percent:02}]%",
-    "format-icons": [
-      "<span color=\"#808080\">󰃟</span>",
-      "<span color=\"#ffd726\">󰃟</span>"
-    ]
-  }, // END "backlight"
-
 
   "battery": {
     "format":          "{icon} [<span color=\"#FFFF00\">{capacity}%</span>, <span color=\"#4accff\">{power:.2f}w</span>, <span color=\"#03fc7f\">{time}:empty</span>]",
@@ -141,7 +133,13 @@
     "tooltip": false
   }, // END "battery"
 
-
+  "backlight": {
+    "format": "{icon} [{percent:02}%]",
+    "format-icons": [
+      "<span color=\"#808080\">󰃟</span>",
+      "<span color=\"#ffd726\">󰃟</span>"
+    ]
+  }, // END "backlight"
 
   "clock": {
     "format": "󰃭 [{:%Y/%m/%d]   [%H:%M}]",
