@@ -16,7 +16,9 @@
                     "custom/spacer2",
     "memory",
                     "custom/spacer2",
-    "disk" 
+    "network",
+                    "custom/spacer2",
+    "bluetooth" 
   ],
 
 // -------------------------------------- CENTER MODULE LAYOUT--------------------------------------------------
@@ -28,7 +30,9 @@
   "modules-right": [
     "battery",
                     "custom/spacer2",
-    "backlight",
+    "backlight", 
+                    "custom/spacer2",
+    "pulseaudio",
                     "custom/spacer2",
     "clock",
                     "custom/spacer1"
@@ -55,19 +59,40 @@
   }, // END "cpu"
 
   "memory": {
-    "format": "{icon} [{used:5.2f}gb - {percentage:2}%]",
+    "format": "{icon} [{used:4.2f}gb - {percentage:2}%]",
     "format-icons": "",
     "interval": 2
   }, // END "memory"
   
-  "disk": {
-    "format": "{icon}",
-    "format-icons": "",
-    "interval": 60,
-    "tooltip": true
-  }, // END "disk"
+  "pulseaudio": {
+    "format": "{icon} [{volume}%]",
+    "format-muted": "󰝟 [{volume}%]",
+    "format-icons": {
+      "default": ["󰖀","󰕾"],
+      "headphone": ""
+    },
+    "format-bluetooth": "{icon} [{volume%}]",
+    "on-click": "pavucontrol"  
+  }, // END "pulseaudio"
 
+  "network": {
+    "format-wifi": "{icon} [{essid}]",
+    "format-disabled": "󰤭 [off]",
+    "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
+    "format-ethernet": " [{cidr}]",
+    "tooltip": true,
+    "tooltip-format": " {bandwidthDownBytes}  {bandwidthUpBytes}",
+    "on-click": "nm-connection-editor",
+    "interval": 1
+  }, // END "network" 
 
+  "bluetooth": {
+    "format-on": "󰂯 [{status} - No Dev.]",
+    "format-off": "󰂲 [{status}]",
+    "format-connected": "󰂰 [{status} - {device_battery_percentage}]",
+    "on-click": "blueman-manager"
+
+  }, // END "bluetooth"
 
 // -------------------------------------- MIDDLE MODULE CONFIG -------------------------------------------------
   "hyprland/workspaces": {

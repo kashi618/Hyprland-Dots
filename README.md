@@ -151,6 +151,7 @@ est. September 9th 2024
 - screenkey (typing)
 - notion-calendar-electrion ***AUR**
 - `ILoveCandy` in `/etc/pacman.conf [options]` ;)
+- libreoffice-fresh
 ---
 
 ## Useful Commands
