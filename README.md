@@ -58,6 +58,7 @@ est. September 9th 2024
 - noto-fonts-extra
 - adwaita-fonts
 - ttf-jetbrains-mono-nerd
+- ttf-liberation (contains Times New Roman, Arial, Courier New)
 
 **Obligatory Neofetch**
 - ~~neofetch~~
