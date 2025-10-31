@@ -60,9 +60,11 @@ est. September 9th 2024
 - ttf-jetbrains-mono-nerd
 - ttf-liberation (contains Times New Roman, Arial, Courier New)
 
-**Obligatory Neofetch**
+**Obligatory Neofetch and Others**
 - ~~neofetch~~
 - fastfetch (neofetch is apparently dead :( )`
+- cmatrix
+- tty-clock ***AUR**
 
 **Battery Saving** (laptop)
 - laptop-mode-tools ***AUR** (check installation on wiki page)
