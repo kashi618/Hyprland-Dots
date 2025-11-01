@@ -1,4 +1,4 @@
-# ~/.bashrc
+## ~/.bashrc
 #
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -49,3 +49,14 @@ alias dup='sudo pacman -S discord'
 alias euro='echo -n '€' | wl-copy && echo Copied € to clipboard'
 alias tnvim='cd temp & nvim'
 alias POWEROFF='poweroff'
+
+showoff() {
+  hyprctl dispatch exec "[workspace 7] kitty"
+  sleep 0.5
+  hyprctl dispatch exec "[workspace 7] kitty -e cmatrix"
+  sleep 0.5  
+  hyprctl dispatch exec "[workspace 7] kitty -e pipes.sh"
+  sleep 0.5  
+  hyprctl dispatch exec "[workspace 7] kitty -e tty-clock"
+  exit
+}
