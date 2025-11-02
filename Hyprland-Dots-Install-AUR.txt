@@ -1,1 +1,0 @@
-hyprshot hyprswitch cable visual-studio-code-bin github-desktop-bin
