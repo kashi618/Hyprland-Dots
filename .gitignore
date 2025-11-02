@@ -41,5 +41,5 @@
 !.config/discord/**/*
 
 ## List of Packages
-!Hyprland-Dots-Install-AUR.txt
-!Hyprland-Dots-Install.txt
+!Hyprland-Dots-Install-AUR.sh
+!Hyprland-Dots-Install.sh
