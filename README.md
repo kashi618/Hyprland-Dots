@@ -43,7 +43,8 @@ est. September 9th 2024
 - gnome-keyring
 
 **App Launcher**
-- walker ***AUR**
+- ~~walker ***AUR**~~
+- rofi
 
 **Status Bar**
 - waybar (don't forget to `systemctl --user enable --now waybar.service`)
@@ -148,9 +149,7 @@ est. September 9th 2024
 - discord
   - xdg-desktop-portal-hyprland  (screenshare) 
 - spotify-launcher
-- spicetify-cli ***AUR**
 - qbittorrent
-- reaper
 - screenkey (typing)
 - notion-calendar-electrion ***AUR**
 - `ILoveCandy` in `/etc/pacman.conf [options]` ;)
