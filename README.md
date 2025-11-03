@@ -136,6 +136,7 @@ est. September 9th 2024
 - git
 - visual-studio-code-bin ***AUR**
 - github-desktop-bin ***AUR**
+- eclipse-java-vin ***AUR**
 
 **LMM CLI Tool**
 - aichat
