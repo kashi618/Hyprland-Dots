@@ -3,6 +3,8 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 
 est. September 9th 2024
 
+![gif](https://i.imgur.com/FOypzIe.gif)
+
 ## Packages
 ### Base Packages
 **Wifi and Bluetooth**
