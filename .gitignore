@@ -40,6 +40,9 @@
 !.config/discord/settings.json
 !.config/discord/**/*
 
+## neovim
+!.config/nvim/**/*
+
 ## List of Packages
 !Hyprland-Dots-Install-AUR.sh
 !Hyprland-Dots-Install.sh
