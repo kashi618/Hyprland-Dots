@@ -53,10 +53,10 @@ alias POWEROFF='poweroff'
 showoff() {
   hyprctl dispatch exec "[workspace 7] kitty"
   sleep 0.5
-  hyprctl dispatch exec "[workspace 7] kitty -e cmatrix"
+  hyprctl dispatch exec "[workspace 7] kitty -e cmatrix -u 6.18033 -B -r"
   sleep 0.5  
   hyprctl dispatch exec "[workspace 7] kitty -e pipes.sh"
   sleep 0.5  
-  hyprctl dispatch exec "[workspace 7] kitty -e tty-clock"
+  hyprctl dispatch exec "[workspace 7] kitty -e tty-clock -sxbc"
   exit
 }

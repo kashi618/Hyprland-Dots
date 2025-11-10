@@ -156,6 +156,7 @@ est. September 9th 2024
 - notion-calendar-electrion ***AUR**
 - `ILoveCandy` in `/etc/pacman.conf [options]` ;)
 - libreoffice-fresh
+- obs-studio
 ---
 
 ## Useful Commands
