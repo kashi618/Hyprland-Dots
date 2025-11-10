@@ -1,4 +1,4 @@
-# Intro
+# Intro (WIP)
 Small repository containing my hyprland dotfiles, running on the beloved, **Archlinux** <3
 
 est. September 9th 2024
