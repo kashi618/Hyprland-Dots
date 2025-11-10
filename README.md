@@ -3,8 +3,9 @@ Small repository containing my hyprland dotfiles, running on the beloved, **Arch
 
 est. September 9th 2024
 
-![gif](https://i.imgur.com/FOypzIe.gif)
-![gif](https://i.imgur.com/aGG2q7R.gif)
+![gif|50](https://i.imgur.com/FOypzIe.gif)
+
+![gif|100](https://i.imgur.com/IjMC3lS.gif)
 
 ## Packages
 ### Base Packages
