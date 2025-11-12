@@ -1,6 +1,4 @@
-layerrules = true
-kill_bind = "ctrl+shift+alt, h"
-version = 2
+version = 3
 
 [windows]
 scale = 8.5
