@@ -158,6 +158,7 @@ est. September 9th 2024
 - qbittorrent
 - screenkey (typing)
 - notion-calendar-electrion ***AUR**
+- thunderbird
 - `ILoveCandy` in `/etc/pacman.conf [options]` ;)
 - libreoffice-fresh
 - obs-studio
