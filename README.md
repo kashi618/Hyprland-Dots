@@ -166,6 +166,7 @@ est. September 9th 2024
 - `ILoveCandy` in `/etc/pacman.conf [options]` ;)
 - libreoffice-fresh
 - obs-studio
+- obsidian
 ---
 
 ## Useful Commands
