@@ -71,12 +71,16 @@ est. September 9th 2024
 - fastfetch (neofetch is apparently dead :( )`
 - cmatrix
 - tty-clock ***AUR**
+- pipes.sh ***AUR**
 
 **Battery Saving** (laptop)
 - laptop-mode-tools ***AUR** (check installation on wiki page)
 
 **Brightness** (laptop)
 - brightnessctl
+
+- **Audio** (laptop -> thinkpad)
+- sof-firmware
 
 ---
 
