@@ -74,7 +74,8 @@ est. September 9th 2024
 - pipes.sh ***AUR**
 
 **Battery Saving** (laptop)
-- laptop-mode-tools ***AUR** (check installation on wiki page)
+- ~~laptop-mode-tools ***AUR** (check installation on wiki page)~~
+- tlp (enable tlp.service)
 
 **Brightness** (laptop)
 - brightnessctl
