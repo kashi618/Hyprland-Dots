@@ -27,7 +27,7 @@ est. September 9th 2024
 - hyprland
 - hyprpaper (used for wallpaper)
 - hyprshot (used for screenshots) ***AUR**
-- hyprswitch (used for alt tab gui) ***AUR**
+- hyprshell (used for alt tab gui) ***AUR**
 
 **Notification Daemon**
 - dunst
