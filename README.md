@@ -79,6 +79,9 @@ est. September 9th 2024
 **Brightness** (laptop)
 - brightnessctl
 
+- **Audio** (laptop -> thinkpad)
+- sof-firmware
+
 ---
 
 ### Misc Tools
