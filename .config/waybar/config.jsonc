@@ -159,7 +159,6 @@
   "backlight": {
     "format": "{icon} [{percent:02}%]",
     "format-icons": [
-      "<span color=\"#808080\">󰃟</span>",
       "<span color=\"#ffd726\">󰃟</span>"
     ]
   }, // END "backlight"
