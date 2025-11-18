@@ -16,9 +16,9 @@
                     "custom/spacer2",
     "memory",
                     "custom/spacer2",
-    "network",
+    "battery",
                     "custom/spacer2",
-    "bluetooth" 
+    "backlight"
   ],
 
 // -------------------------------------- CENTER MODULE LAYOUT--------------------------------------------------
@@ -28,9 +28,9 @@
   
 // -------------------------------------- RIGHT MODULE LAYOUT--------------------------------------------------
   "modules-right": [
-    "battery",
+    "network","custom/rightBracket",
                     "custom/spacer2",
-    "backlight", 
+    "bluetooth",
                     "custom/spacer2",
     "pulseaudio",
                     "custom/spacer2",
@@ -48,25 +48,33 @@
   "custom/spacer2": {
     "format": "  "
   }, // END "custom/spacer2"
+  "custom/rightBracket": {
+    "format": "]"
+  },
 
 
 // -------------------------------------- LEFT MODULE CONFIG --------------------------------------------------- 
   "cpu": {
     "format": "{icon} [{usage:2}% - {avg_frequency:04.2f}ghz]",
-    "format-icons": "",
-    "interval": 2,
-    "tooltip": true
+    "format-icons": "<span color=\"#a1a1a1\"></span>",
+    "interval": 1,
+    "tooltip": true,
+    "on-click": "missioncenter"
   }, // END "cpu"
 
   "memory": {
     "format": "{icon} [{percentage:2}% - {used:4.2f}gb]",
-    "format-icons": "",
-    "interval": 2
+    "format-icons": "<span color=\"#109c10\"></span>",
+    "interval": 2,
+    "on-click": "missioncenter"
   }, // END "memory"
   
   "network": {
-    "format-wifi": "<span color=\"#42ff42\">{icon}</span> [{ifname} {essid:.8}-]",
-    "format-disabled": "󰤭 [off]",
+    "max-length": 25,
+    "format": "<span color=\"#42ff42\">{icon}</span>  [{essid}",
+    //"format-wifi": "<span color=\"#42ff42\">{icon}</span> [{ifname} {essid:.8}]", 
+    "format-disconnected": "<span color=\"#ffa500\">󰤯</span> [disconnected]",
+    "format-disabled": "<span color=\"#ff0000\">󰤭</span> [Off]",
     "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
     "format-ethernet": "<span color=\"#42ff42\"> </span>[{ifname}]",
     "tooltip": true,
@@ -76,9 +84,11 @@
   }, // END "network" 
 
   "bluetooth": {
-    "format-on": "<span color=\"#2e9aff\">󰂯</span> [{status} - No Dev.]",
-    "format-off": "<span color=\"#2e9aff\">󰂯</span> [{status}]",
-    "format-connected": "<span color=\"#2e9aff\">󰂯</span> [{status} - {device_battery_percentage}]",
+    "format-on": "<span color=\"#45bbff\">󰂯</span> [{status} - No Device]",
+    "format-off": "<span color=\"#ff0000\">󰂲</span> [{status}]",
+    "format-connected": "<span color=\"#45bbff\">󰂰</span> [Connected - {device_battery_percentage}%]",
+    "tooltip": true,
+    "tooltip-format": "{device_alias}",
     "on-click": "hyprctl dispatch exec '[float] blueman-manager'"
   }, // END "bluetooth"
 
@@ -109,8 +119,8 @@
 // -------------------------------------- RIGHT MODULE CONFIG --------------------------------------------------
 
   "battery": {
-    "format":          "{icon} [<span color=\"#FFFF00\">{capacity}%</span>, <span color=\"#4accff\">{power:.2f}w</span>, <span color=\"#03fc7f\">{time}:empty</span>]",
-    "format-charging": "{icon} [<span color=\"#FFFF00\">{capacity}%</span>, <span color=\"#03fc7f\">{power:.2f}w</span>, <span color=\"#03fc7f\">{time}:full</span>]",
+    "format":          "{icon} [<span color=\"#FFFF00\">{capacity}%</span>, <span color=\"#4accff\">-{power:.2f}w</span>, <span color=\"#03fc7f\">{time}:empty</span>]",
+    "format-charging": "{icon} [<span color=\"#FFFF00\">{capacity}%</span>, <span color=\"#03fc7f\">+{power:.2f}w</span>, <span color=\"#03fc7f\">{time}:full</span>]",
     "format-time": "{H:02}h{M:02}m",
     "format-icons": {
       "default": [
@@ -143,7 +153,7 @@
       "warning": 20,
       "critical": 10
     },
-    "tooltip": false
+    "tooltip": false 
   }, // END "battery"
 
   "backlight": {

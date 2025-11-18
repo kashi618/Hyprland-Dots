@@ -38,9 +38,9 @@
 
 ## Discord (disable mandatory updates)
 !.config/discord/settings.json
-!.config/discord/**/*
 
 ## neovim
+!.config/nvim
 !.config/nvim/**/*
 
 ## List of Packages
