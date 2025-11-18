@@ -27,7 +27,7 @@ est. September 9th 2024
 - hyprland
 - hyprpaper (used for wallpaper)
 - hyprshot (used for screenshots) ***AUR**
-- hyprswitch (used for alt tab gui) ***AUR**
+- hyprshell-bin (used for alt tab gui) ***AUR**
 
 **Notification Daemon**
 - dunst
@@ -74,7 +74,8 @@ est. September 9th 2024
 - pipes.sh ***AUR**
 
 **Battery Saving** (laptop)
-- laptop-mode-tools ***AUR** (check installation on wiki page)
+- ~~laptop-mode-tools ***AUR** (check installation on wiki page)~~
+- tlp (enable tlp.service)
 
 **Brightness** (laptop)
 - brightnessctl
@@ -166,6 +167,7 @@ est. September 9th 2024
 - `ILoveCandy` in `/etc/pacman.conf [options]` ;)
 - libreoffice-fresh
 - obs-studio
+- obsidian
 ---
 
 ## Useful Commands
