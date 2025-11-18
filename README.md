@@ -73,9 +73,10 @@ est. September 9th 2024
 - tty-clock ***AUR**
 - pipes.sh ***AUR**
 
-**Battery Saving** (laptop)
+**Battery** (laptop)
 - ~~laptop-mode-tools ***AUR** (check installation on wiki page)~~
 - tlp (enable tlp.service)
+- gnome-power-statistics
 
 **Brightness** (laptop)
 - brightnessctl
@@ -168,6 +169,8 @@ est. September 9th 2024
 - libreoffice-fresh
 - obs-studio
 - obsidian
+- kolourpaint
+
 ---
 
 ## Useful Commands
