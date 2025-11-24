@@ -6,42 +6,37 @@
   "height": 35,
   "spacing": 0,
 
-
-// -------------------------------------| MODULE LAYOUT |-------------------------------------------------
-  
-// -------------------------------------- LEFT MODULE LAYOUT----------------------------------------------------
+// ---------- LAYOUT ---------- //
   "modules-left": [
-                    "custom/spacer1",
+        "custom/spacer1",
     "cpu",    
-                    "custom/spacer2",
+        "custom/spacer2",
     "memory",
-                    "custom/spacer2",
+        "custom/spacer2",
     "battery",
-                    "custom/spacer2",
+        "custom/spacer2",
     "backlight"
   ],
 
-// -------------------------------------- CENTER MODULE LAYOUT--------------------------------------------------
   "modules-center": [
     "hyprland/workspaces"
   ],
   
-// -------------------------------------- RIGHT MODULE LAYOUT--------------------------------------------------
   "modules-right": [
+    "custom/leftBracket", "group/superTray", "custom/rightBracket",
+        "custom/spacer2",
     "network","custom/rightBracket",
-                    "custom/spacer2",
+        "custom/spacer2",
     "bluetooth",
-                    "custom/spacer2",
+        "custom/spacer2",
     "pulseaudio",
-                    "custom/spacer2",
+        "custom/spacer2",
     "clock",
-                    "custom/spacer1"
+        "custom/spacer1"
   ],
 
-
-// -------------------------------------| MODULE CONFIG |------------------------------------------------ 
-
-// -------------------------------------- GENERAL CONFIG -------------------------------------------------------
+// ---------- CONFIGS ---------- //
+  // misc
   "custom/spacer1": {
     "format": " "
   }, // END "custom/spacer2"
@@ -50,74 +45,37 @@
   }, // END "custom/spacer2"
   "custom/rightBracket": {
     "format": "]"
-  },
+  }, // END "custom/rightBracket"
+  "custom/leftBracket": {
+    "format": "["
+  }, // END "custom/leftBracket"
 
 
-// -------------------------------------- LEFT MODULE CONFIG --------------------------------------------------- 
-  "cpu": {
-    "format": "{icon} [{usage:2}% - {avg_frequency:04.2f}ghz]",
-    "format-icons": "<span color=\"#a1a1a1\"></span>",
-    "interval": 1,
-    "tooltip": true,
-    "on-click": "missioncenter"
-  }, // END "cpu"
+  // Modules
+  "group/superTray": {
+    "orientation": "horizontal",
+    "transition-left-to-right": false,
+    "drawer": {
+      "transition-duration": 500
+    },
+    "spacing": 15,
+    "modules": [
+      "custom/superTrayIcon",
+      "tray"
+    ]
+  }, // END "group/superTray
+  "custom/superTrayIcon": {
+    "format": "󰥭 ",
+    "tooltip-format": "Show Items in Tray"
+  }, // END "custom/superTray"
 
-  "memory": {
-    "format": "{icon} [{percentage:2}% - {used:4.2f}gb]",
-    "format-icons": "<span color=\"#109c10\"></span>",
-    "interval": 2,
-    "on-click": "missioncenter"
-  }, // END "memory"
+  "backlight": {
+    "format": "{icon} [{percent:02}%]",
+    "format-icons": [
+      "<span color=\"#ffd726\">󰃟</span>"
+    ]
+  }, // END "backlight"
   
-  "network": {
-    "max-length": 25,
-    "format": "<span color=\"#42ff42\">{icon}</span>  [{essid}",
-    //"format-wifi": "<span color=\"#42ff42\">{icon}</span> [{ifname} {essid:.8}]", 
-    "format-disconnected": "<span color=\"#ffa500\">󰤯</span> [disconnected]",
-    "format-disabled": "<span color=\"#ff0000\">󰤭</span> [Off]",
-    "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
-    "format-ethernet": "<span color=\"#42ff42\"> </span>[{ifname}]",
-    "tooltip": true,
-    "tooltip-format": " {bandwidthDownBytes}  {bandwidthUpBytes}",
-    "on-click": "hyprctl dispatch exec '[float] nm-connection-editor'",
-    "interval": 1
-  }, // END "network" 
-
-  "bluetooth": {
-    "format-on": "<span color=\"#45bbff\">󰂯</span> [{status} - No Device]",
-    "format-off": "<span color=\"#ff0000\">󰂲</span> [{status}]",
-    "format-connected": "<span color=\"#45bbff\">󰂰</span> [Connected - {device_battery_percentage}%]",
-    "tooltip": true,
-    "tooltip-format": "{device_alias}",
-    "on-click": "hyprctl dispatch exec '[float] blueman-manager'"
-  }, // END "bluetooth"
-
-// -------------------------------------- MIDDLE MODULE CONFIG -------------------------------------------------
-  "hyprland/workspaces": {
-    "format": "{icon}",
-    "format-icons": {
-      "1": "󰊠",
-      "2": "",
-      "3": "󰊠",
-      "4": "",
-      "5": "󰣇",
-      "6": "",
-      "7": "󰊠",
-      "8": "",
-      "9": "󰊠",
-      "active":  "󰮯",
-      "default": "",
-      "urgent":  "U"
-   },
-    "on-click": "activate",
-    "all-outputs": false,
-    "persistent-workspaces": {
-      "*": 9
-    }
-  }, // END "hyprland/workspaces"
-
-// -------------------------------------- RIGHT MODULE CONFIG --------------------------------------------------
-
   "battery": {
     "format":          "{icon} [<span color=\"#FFFF00\">{capacity}%</span>, <span color=\"#4accff\">-{power:.2f}w</span>, <span color=\"#03fc7f\">{time}:empty</span>]",
     "format-charging": "{icon} [<span color=\"#FFFF00\">{capacity}%</span>, <span color=\"#03fc7f\">+{power:.2f}w</span>, <span color=\"#03fc7f\">{time}:full</span>]",
@@ -144,7 +102,7 @@
         "<span color=\"#00FF00\">󰂉</span>",
         "<span color=\"#00FF00\">󰢞</span>",
         "<span color=\"#00FF00\">󰂊</span>",
-        "<span color=\"#00FF00\">󰂋</span>",
+        "<span color=\"#00FF00\">󰂋</span>"
       ]
     },
     "format-full": "<span color=\"#00FF00>󱟢</span>",
@@ -155,25 +113,15 @@
     },
     "tooltip": false 
   }, // END "battery"
-
-  "backlight": {
-    "format": "{icon} [{percent:02}%]",
-    "format-icons": [
-      "<span color=\"#ffd726\">󰃟</span>"
-    ]
-  }, // END "backlight"
-
-  "pulseaudio": {
-    "format": "{icon} [{volume}%]",
-    "format-muted": "󰝟 [{volume}%]",
-    "format-icons": {
-      "default": ["󰖀","󰕾"]
-    },
-    "on-click": "hyprctl dispatch exec '[float] pavucontrol'",
-    "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-    "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +1%",
-    "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -1%"
-  }, // END "pulseaudio"
+  
+  "bluetooth": {
+    "format-on": "<span color=\"#45bbff\">󰂯</span> [{status}]",
+    "format-off": "<span color=\"#ff0000\">󰂲</span> [{status}]",
+    "format-connected": "<span color=\"#45bbff\">󰂰</span> [Paired - {device_battery_percentage}%]",
+    "tooltip": true,
+    "tooltip-format": "{device_alias}",
+    "on-click": "hyprctl dispatch exec '[float] blueman-manager'"
+  }, // END "bluetooth"
 
   "clock": {
     "format": "󰃭 [{:%Y/%m/%d]   [%H:%M}]",
@@ -193,6 +141,75 @@
         "today"   : "<span color='#ff6699'><b><u>{}</u></b></span>"
       }
     }
-  } // END "clock"
+  }, // END "clock"
+
+  "cpu": {
+    "format": "{icon} [{usage:2}% - {avg_frequency:04.2f}ghz]",
+    "format-icons": "<span color=\"#a1a1a1\"></span>",
+    "interval": 1,
+    "tooltip": true,
+    "on-click": "missioncenter"
+  }, // END "cpu"
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "1": "󰊠",
+      "2": "",
+      "3": "󰊠",
+      "4": "",
+      "5": "󰣇",
+      "6": "",
+      "7": "󰊠",
+      "8": "",
+      "9": "󰊠",
+      "active":  "󰮯",
+      "default": "",
+      "urgent":  "U"
+   },
+    "on-click": "activate",
+    "all-outputs": false,
+    "persistent-workspaces": {
+      "*": 9
+    }
+  }, // END "hyprland/workspaces"
+
+  "memory": {
+    "format": "{icon} [{percentage:2}% - {used:4.2f}gb]",
+    "format-icons": "<span color=\"#109c10\"></span>",
+    "interval": 2,
+    "on-click": "missioncenter"
+  }, // END "memory"
+
+  "network": {
+    "max-length": 25,
+    "format": "{icon}  [{essid}",
+    "format-disconnected": "<span color=\"#ffa500\">󰤯</span> [disconnected]",
+    "format-disabled": "<span color=\"#ff0000\">󰤭</span> [Off]",
+    "format-icons": [
+	    "<span color=\"#ff0000\">󰤯</span",
+	    "<span color=\"#e67e22\">󰤟</span>",
+	    "<span color=\"#f1c40f\">󰤢</span>",
+	    "<span color=\"#58d068\">󰤥</span>",
+	    "<span color=\"#2ecc71\">󰤨</span>"
+    ],
+    "format-ethernet": "<span color=\"#42ff42\"> </span>[{ifname}]",
+    "tooltip": true,
+    "tooltip-format": " {bandwidthDownBytes}  {bandwidthUpBytes}",
+    "on-click": "hyprctl dispatch exec '[float] nm-connection-editor'",
+    "interval": 1
+  }, // END "network" 
+
+  "pulseaudio": {
+    "format": "{icon} [{volume}%]",
+    "format-muted": "󰝟 [{volume}%]",
+    "format-icons": {
+      "default": ["󰖀","󰕾"]
+    },
+    "on-click": "hyprctl dispatch exec '[float] pavucontrol'",
+    "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +1%",
+    "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -1%"
+  } // END "pulseaudio"
 
 } // END config.jsonc

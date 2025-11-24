@@ -18,9 +18,9 @@ PS1="${PURPLE}╓─[\u@\h] -> {${CYAN}\$PWD${PURPLE}}\n${PURPLE}╙─>${GREEN}
 
 
 # Run fastfetch
+clear
 echo
 fastfetch
-
 
 # Welcome Comment
 GREEN='\e[92m'
@@ -53,6 +53,9 @@ alias tnvim='cd temp & nvim'
 alias POWEROFF='poweroff'
 alias fj='nvim'
 alias fje='nvim +Ex'
+alias xampp='sudo /opt/lampp/xampp'
+alias rr='exec bash'
+alias use='~/Documents/use-6.0.0/bin/use'
 
 showoff() {
   hyprctl dispatch exec "[workspace 7] kitty"

@@ -8,7 +8,13 @@
 tooltip {
     background-color: black; 
 }
+#tray menu{
+	background-color: black;
+}
 
+#custom-hardware-wrap {
+     background-color: black;
+}
 /* -----------------------  WORKSPACES ---------------------------- */
 
 /* Workspace colours */

@@ -1,12 +1,11 @@
-model: deepseek:deepseek-chat
+model: openai:gpt-5-nano
 
 clients:
 - type: openai-compatible
   name: deepseek
   api_base: https://api.deepseek.com/v1
   apiKey: $DEEPSEEK_API_KEY
-  models:
-    - name: deepseek-chat
-    - name: deepseek-reasoner
-
-
+- type: openai
+  name: openai
+  api_base: https://api.openai.com/v1
+  apiKey: $OPENAI_API_KEY

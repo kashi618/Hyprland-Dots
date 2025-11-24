@@ -8,7 +8,7 @@
         "3": "38;2;23;147;209"
     }
   },
-
+  
   "modules": [
     "separator",
     "title",
@@ -37,8 +37,15 @@
     "packages",
  
     "break",
-
-    "disk",
+    
+    // CHANGE STARTS HERE
+    {
+        "type": "disk",
+        "folders": ["/", "/home"],
+        "key": "Disk"
+    },
+    // CHANGE ENDS HERE
+    
     "break",
 
     "separator",
