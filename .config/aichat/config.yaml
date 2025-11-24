@@ -1,5 +1,18 @@
+# Default Model
 model: openai:gpt-5-nano
 
+# Config
+stream: true
+keybindings: vi
+editor: nvim
+wrap: no
+wrap_code: false
+
+# Write in Markdown
+name: markdown
+prompt: convert INPUT to markdown
+
+# AI Config
 clients:
 - type: openai-compatible
   name: deepseek

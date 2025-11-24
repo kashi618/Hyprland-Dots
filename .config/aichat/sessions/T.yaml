@@ -1,0 +1,20 @@
+model: openai:gpt-5-nano
+role_name: '%markdown%'
+messages:
+- role: system
+  content: |-
+    - name: markdown
+    prompt: Talk in markdown format.
+- role: user
+  content: what is 2+2
+- role: assistant
+  content: The result of 2 + 2 is **4**.
+- role: user
+  content: '+2'
+- role: assistant
+  content: |-
+    - If you mean the unary expression "+2": value is **2**.
+    - If you meant to add 2 to the previous answer (the previous result was 4): **6**.
+    - If you meant the original question "2 + 2": **4**.
+
+    Which interpretation did you intend?

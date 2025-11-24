@@ -65,7 +65,7 @@
     ]
   }, // END "group/superTray
   "custom/superTrayIcon": {
-    "format": "󰥭 ",
+    "format": "󰥭 ",
     "tooltip-format": "Show Items in Tray"
   }, // END "custom/superTray"
 
@@ -77,7 +77,7 @@
   }, // END "backlight"
   
   "battery": {
-    "format":          "{icon} [<span color=\"#FFFF00\">{capacity}%</span>, <span color=\"#4accff\">-{power:.2f}w</span>, <span color=\"#03fc7f\">{time}:empty</span>]",
+    "format": "{icon} [<span color=\"#FFFF00\">{capacity}%</span>, <span color=\"#4accff\">-{power:.2f}w</span>, <span color=\"#03fc7f\">{time}:empty</span>]",
     "format-charging": "{icon} [<span color=\"#FFFF00\">{capacity}%</span>, <span color=\"#03fc7f\">+{power:.2f}w</span>, <span color=\"#03fc7f\">{time}:full</span>]",
     "format-time": "{H:02}h{M:02}m",
     "format-icons": {

@@ -42,7 +42,7 @@ export OLLAMA_MODELS=/home/kashi/Documents/Ollama
 
 # Alias's
 alias fm='ranger'
-alias aids='aichat -s'
+alias aids='aichat -s temp -r markdown'
 alias sysup='sudo pacman -Syu && read -p "Do you want to run yay -Syu? (y/N): " choice; if [[ $choice == [Yy]* ]]; then yay -Syu; fi; sudo pacman -Rsnc $(pacman -Qtdq)'
 alias rmStupid='sudo pacman -Rsnc $(pacman -Qtdq)'
 alias backup='sudo timeshift --create'
