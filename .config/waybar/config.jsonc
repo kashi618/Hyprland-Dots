@@ -9,7 +9,7 @@
 // ---------- LAYOUT ---------- //
   "modules-left": [
         "custom/spacer1",
-    "cpu",    
+    "cpu", "temperature",    
         "custom/spacer2",
     "memory",
         "custom/spacer2",
@@ -69,6 +69,8 @@
     "tooltip-format": "Show Items in Tray"
   }, // END "custom/superTray"
 
+
+
   "backlight": {
     "format": "{icon} [{percent:02}%]",
     "format-icons": [
@@ -115,16 +117,16 @@
   }, // END "battery"
   
   "bluetooth": {
-    "format-on": "<span color=\"#45bbff\">󰂯</span>  [{status}]",
-    "format-off": "<span color=\"#ff0000\">󰂲</span>  [{status}]",
-    "format-connected": "<span color=\"#45bbff\">󰂰</span>  [Paired - {device_battery_percentage}%]",
+    "format-on": "<span color=\"#45bbff\">󰂯</span> [{status}]",
+    "format-off": "<span color=\"#ff0000\">󰂲</span> [{status}]",
+    "format-connected": "<span color=\"#45bbff\">󰂰</span> [Paired - {device_battery_percentage}%]",
     "tooltip": true,
     "tooltip-format": "{device_alias}",
     "on-click": "hyprctl dispatch exec '[float] blueman-manager'"
   }, // END "bluetooth"
 
   "clock": {
-    "format": "󰃭 [{:%Y/%m/%d]   [%H:%M}]",
+    "format": "<span color=\"#a1a1a1\">󰃭</span> [{:%Y/%m/%d]  <span color=\"#a1a1a1\"></span> [%H:%M}]",
     "interval": 1,
     "on-click": "~/.config/waybar/scripts/clock/calendar.sh",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
@@ -144,7 +146,7 @@
   }, // END "clock"
 
   "cpu": {
-    "format": "{icon} [{usage:2}% - {avg_frequency:04.2f}ghz]",
+    "format": "{icon} [{usage:2}% - {max_frequency:04.2f}ghz - ",
     "format-icons": "<span color=\"#a1a1a1\"></span>",
     "interval": 1,
     "tooltip": true,
@@ -202,7 +204,7 @@
 
   "pulseaudio": {
     "format": "{icon} [{volume}%]",
-    "format-muted": "󰝟 [{volume}%]",
+    "format-muted": "<span color=\"#ff3526\">󰝟</span> [{volume}%]",
     "format-icons": {
       "default": ["󰖀","󰕾"]
     },
@@ -210,6 +212,13 @@
     "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +1%",
     "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -1%"
-  } // END "pulseaudio"
+  }, // END "pulseaudio"
+  
+  "temperature": {
+    "format": "{temperatureC:2}°C]",
+    "tooltip": true,
+    "tooltip-format": "missioncenter",
+    "interval": 1
+  } // END "temperature"
 
 } // END config.jsonc
