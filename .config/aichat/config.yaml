@@ -1,5 +1,5 @@
 # Default Model
-model: openai:gpt-5-nano
+model: openai:gpt-5.1
 
 # Config
 stream: true
