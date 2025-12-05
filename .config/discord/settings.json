@@ -4,9 +4,9 @@
   "IS_MINIMIZED": false,
   "WINDOW_BOUNDS": {
     "x": 13,
-    "y": 86,
-    "width": 2532,
-    "height": 1500
+    "y": 823,
+    "width": 1261,
+    "height": 762
   },
   "offloadAdmControls": true,
   "enableHardwareAcceleration": true,
