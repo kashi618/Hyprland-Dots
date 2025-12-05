@@ -195,7 +195,7 @@
 	    "<span color=\"#58d068\">󰤥</span>",
 	    "<span color=\"#2ecc71\">󰤨</span>"
     ],
-    "format-ethernet": "<span color=\"#42ff42\"> </span>[{ifname}]",
+    "format-ethernet": "<span color=\"#42ff42\"> </span>[{ifname}",
     "tooltip": true,
     "tooltip-format": " {bandwidthDownBytes}  {bandwidthUpBytes}",
     "on-click": "hyprctl dispatch exec '[float] nm-connection-editor'",
