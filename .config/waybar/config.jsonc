@@ -208,8 +208,8 @@
     "format-icons": {
       "default": ["󰖀","󰕾"]
     },
-    "on-click": "hyprctl dispatch exec '[float] pavucontrol'",
-    "on-click-right": "hyprctl dispatch exec '[float] cable'",
+    "on-click": "pavucontrol",
+    "on-click-right": "pkill -x cable; cable",
     "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +1%",
     "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -1%"
   }, // END "pulseaudio"
