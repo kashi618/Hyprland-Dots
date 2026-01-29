@@ -94,6 +94,7 @@ est. September 9th 2024
 **File Manager**
 - thunar
 - tumbler (for image thumbnails)
+- gvfs (handles trash, and a variety of others)
 - udiskie (auto mount USB)
 - android-file-transfer
 
