@@ -72,3 +72,4 @@ showoff() {
 export PATH="$PATH:/home/kashi/.lmstudio/bin"
 # End of LM Studio CLI section
 
+[ -s "/home/kashi/.jabba/jabba.sh" ] && source "/home/kashi/.jabba/jabba.sh"

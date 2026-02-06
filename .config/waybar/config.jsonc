@@ -108,7 +108,7 @@
       ]
     },
     "format-full": "<span color=\"#00FF00>󱟢</span>",
-    "interval": 1,
+    "interval": 5,
     "states": {
       "warning": 20,
       "critical": 10
