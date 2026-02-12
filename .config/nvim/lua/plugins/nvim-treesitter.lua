@@ -2,20 +2,13 @@ return {
     "nvim-treesitter/nvim-treesitter",
     version = "*",
     lazy = false,
-    dependencies = {
-        
-    },
     config = function()
-        require('nvim-treesitter').setup {
-            highlight = {
-                enable = true,
-            },
-            indent = {
-                enable = true,
-            },
-            ensure_installed = {
-                "javascript", "typescript", "python", "lua", "vim", "bash", "json", "yaml", "markdown", "html", "css", "java", "c"
-            },
-        }
+        local configs = require("nvim-treesitter.configs")
+        
+        configs.setup({
+            highlight = { enable = true}, 
+            indent = { enable = true },
+            auto_install = { enable = true},
+        })
     end,
 }
