@@ -3,7 +3,13 @@ return {
     version = "*",
     lazy = false,
     config = function()
-        local configs = require("nvim-treesitter.configs")
+        vim.filetype.add({
+            extension = {
+                h = "c",
+            }
+        })
+
+        require("nvim-treesitter.configs")
         
         configs.setup({
             highlight = { enable = true}, 
