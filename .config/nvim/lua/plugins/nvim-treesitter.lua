@@ -9,12 +9,10 @@ return {
             }
         })
 
-        require("nvim-treesitter.configs")
-        
-        configs.setup({
+        require('nvim-treesitter.configs').setup {
             highlight = { enable = true}, 
             indent = { enable = true },
             auto_install = { enable = true},
-        })
+        }
     end,
 }
