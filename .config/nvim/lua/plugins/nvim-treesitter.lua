@@ -3,10 +3,16 @@ return {
     version = "*",
     lazy = false,
     dependencies = {
-        
+
     },
     config = function()
-        require('nvim-treesitter').setup {
+        vim.filetype.add({
+            extension = {
+                h = "c",
+            }
+        })
+
+        require('nvim-treesitter.configs').setup {
             highlight = {
                 enable = true,
             },
@@ -14,7 +20,7 @@ return {
                 enable = true,
             },
             ensure_installed = {
-                "javascript", "typescript", "python", "lua", "vim", "bash", "json", "yaml", "markdown", "html", "css", "java", "c"
+               "bash", "json", "yaml", "markdown", "html", "css", "java", "c"
             },
         }
     end,
