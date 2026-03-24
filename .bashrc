@@ -56,6 +56,8 @@ alias fje='nvim +Ex'
 alias xampp='sudo /opt/lampp/xampp'
 alias rr='exec bash'
 alias use='~/Documents/use-6.0.0/bin/use'
+alias pls='sudo'
+alias PLEASE='sudo'
 
 showoff() {
   hyprctl dispatch exec "[workspace 7] kitty"
