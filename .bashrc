@@ -37,6 +37,8 @@ source ~/Documents/EXPORT_API_KEYS.sh
 
 # Environment Variables
 #export MANGOHUD=1   # Runs mangohud for all VULKAN games
+export OLLAMA_MODELS=/home/kashi/Documents/Ollama
+
 
 # Alias's
 alias fm='ranger'
@@ -66,5 +68,8 @@ showoff() {
   exit
 }
 
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/kashi/.lmstudio/bin"
+# End of LM Studio CLI section
 
 [ -s "/home/kashi/.jabba/jabba.sh" ] && source "/home/kashi/.jabba/jabba.sh"
