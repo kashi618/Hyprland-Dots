@@ -32,9 +32,6 @@ est. September 9th 2024
 **Notification Daemon**
 - dunst
 
-**Session Manager**
-- uwsm
-
 **Display Manager**
 - sddm (don't forget to `systemctl enable sddm.service`)
 
@@ -93,16 +90,18 @@ est. September 9th 2024
 
 **File Manager**
 - thunar
-- tumbler (for image thumbnails)
+- thunar-volman (auto mount USB)
 - gvfs (handles trash, and a variety of others)
-- udiskie (auto mount USB)
-- android-file-transfer
+- gvfs-mtp (auto mount android devices)
+- tumbler (for image thumbnails)
 
 **File Extractor**
 - 7zip
 - unzip
+
 - file-roller
 - ark
+- xarchiver
 
 *NOTE: Haven't decided on one that fits all my needs, so I have quite a few*
 
