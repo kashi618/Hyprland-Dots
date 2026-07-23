@@ -151,6 +151,8 @@ Other (Non steam games. Not reccomended)
 - vim
 - nano
 - git
+
+Other
 - visual-studio-code-bin ***AUR**
 - github-desktop-bin ***AUR**
 - eclipse-java-vin ***AUR**
@@ -168,14 +170,13 @@ Other (Non steam games. Not reccomended)
   - xdg-desktop-portal-hyprland  (screenshare) 
 - spotify-launcher
 - qbittorrent
-- screenkey (typing)
-- notion-calendar-electrion ***AUR**
 - thunderbird
 - `ILoveCandy` in `/etc/pacman.conf [options]` ;)
 - libreoffice-fresh
 - obs-studio
 - obsidian
 - kolourpaint
+- mission-center
 
 ---
 
