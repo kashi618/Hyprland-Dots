@@ -120,7 +120,10 @@ est. September 9th 2024
 
 **File Partition and Similar**
 - filelight
-- gdisk
+
+**Flatpak Manager**
+- flatpak
+- bazaar
 
 ---
 
@@ -129,17 +132,20 @@ est. September 9th 2024
 - firefox
 
 **Gaming on Linux**
-- lutris
 - steam
+- heroic launcher (flatpak)
 
-- mangohud (fps counter)
-- goverlay (mangohud editor)
-- vulkan-tools
-
+Wine and proton
 - wine
 - winetricks
 - protonup-qt (used for proton-ge and steamtinkerlaunch) ***AUR**
 - steamtinkerlaunch (used for dependencies) ***AUR**
+
+Other (Non steam games. Not reccomended)
+- lutris
+- mangohud (fps counter)
+- goverlay (mangohud editor)
+- vulkan-tools
 
 **Dev Tools & Text Editors**
 - vim
