@@ -1,8 +1,12 @@
 * {
     font-family: "JetBrainsMono Nerd Font";
     font-size: 16px;
-    font-weight: bold;    
+    font-weight: bold;  
     background: rgba(0, 0, 0,0);
+}
+
+window#waybar {
+    color: #ffffff;
 }
 
 tooltip {

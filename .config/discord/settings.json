@@ -12,5 +12,6 @@
   "enableHardwareAcceleration": true,
   "chromiumSwitches": {},
   "SKIP_HOST_UPDATE": true,
-  "asyncVideoInputDeviceInit": false
+  "asyncVideoInputDeviceInit": false,
+  "openH264Enabled": true
 }

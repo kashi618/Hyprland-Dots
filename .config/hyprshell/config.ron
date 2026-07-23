@@ -1,6 +1,6 @@
-// Edit via `hyprshell config edit`, generate via `hyprshell config generate`
+// Edit with `hyprshell config edit`
 (
-    version: 3,
+    version: 4,
     windows: (
         scale: 8.5,
         items_per_row: 5,
@@ -70,10 +70,12 @@
                 ),
             ),
             key: "Tab",
+            top_offset: 430,
             modifier: "super",
             filter_by: [],
-            hide_filtered: false,
+            exclude_workspaces: "",
         ),
         switch: None,
+        switch_2: None,
     ),
 )
