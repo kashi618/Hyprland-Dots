@@ -32,9 +32,6 @@ est. September 9th 2024
 **Notification Daemon**
 - dunst
 
-**Session Manager**
-- uwsm
-
 **Display Manager**
 - sddm (don't forget to `systemctl enable sddm.service`)
 
@@ -93,16 +90,18 @@ est. September 9th 2024
 
 **File Manager**
 - thunar
-- tumbler (for image thumbnails)
+- thunar-volman (auto mount USB)
 - gvfs (handles trash, and a variety of others)
-- udiskie (auto mount USB)
-- android-file-transfer
+- gvfs-mtp (auto mount android devices)
+- tumbler (for image thumbnails)
 
 **File Extractor**
 - 7zip
 - unzip
+
 - file-roller
 - ark
+- xarchiver
 
 *NOTE: Haven't decided on one that fits all my needs, so I have quite a few*
 
@@ -121,7 +120,10 @@ est. September 9th 2024
 
 **File Partition and Similar**
 - filelight
-- gdisk
+
+**Flatpak Manager**
+- flatpak
+- bazaar
 
 ---
 
@@ -130,22 +132,27 @@ est. September 9th 2024
 - firefox
 
 **Gaming on Linux**
-- lutris
 - steam
+- heroic launcher (flatpak)
 
-- mangohud (fps counter)
-- goverlay (mangohud editor)
-- vulkan-tools
-
+Wine and proton
 - wine
 - winetricks
 - protonup-qt (used for proton-ge and steamtinkerlaunch) ***AUR**
 - steamtinkerlaunch (used for dependencies) ***AUR**
 
+Other (Non steam games. Not reccomended)
+- lutris
+- mangohud (fps counter)
+- goverlay (mangohud editor)
+- vulkan-tools
+
 **Dev Tools & Text Editors**
 - vim
 - nano
 - git
+
+Other
 - visual-studio-code-bin ***AUR**
 - github-desktop-bin ***AUR**
 - eclipse-java-vin ***AUR**
@@ -163,14 +170,13 @@ est. September 9th 2024
   - xdg-desktop-portal-hyprland  (screenshare) 
 - spotify-launcher
 - qbittorrent
-- screenkey (typing)
-- notion-calendar-electrion ***AUR**
 - thunderbird
 - `ILoveCandy` in `/etc/pacman.conf [options]` ;)
 - libreoffice-fresh
 - obs-studio
 - obsidian
 - kolourpaint
+- mission-center
 
 ---
 
