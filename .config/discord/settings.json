@@ -3,10 +3,10 @@
   "IS_MAXIMIZED": false,
   "IS_MINIMIZED": false,
   "WINDOW_BOUNDS": {
-    "x": 3617,
-    "y": 50,
-    "width": 940,
-    "height": 1536
+    "x": 1931,
+    "y": 40,
+    "width": 1028,
+    "height": 796
   },
   "offloadAdmControls": true,
   "enableHardwareAcceleration": true,

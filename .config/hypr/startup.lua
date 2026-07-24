@@ -23,11 +23,10 @@
 
 hl.on("hyprland.start", function()
     hl.exec_cmd("kitty", { workspace = "5 silent" })
-    hl.exec_cmd("uwsm app -- dunst")
-    hl.exec_cmd("hyprshell run &")
-    hl.exec_cmd("uwsm app -- hyprpaper")
-    hl.exec_cmd("exec-once = systemctl --user start hyprpolkitagent")
-    hl.exec_cmd("systemctl --user enable --now hyprpolkitagent.service")
-    hl.exec_cmd("udiskie &")
+    hl.exec_cmd("dunst")
+    hl.exec_cmd("hyprshell run")
+    hl.exec_cmd("hyprpaper")
+    hl.exec_cmd("hyprpolkitagent")
+    hl.exec_cmd("waybar") 
 end)
 

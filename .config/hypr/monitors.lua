@@ -34,6 +34,6 @@ hl.monitor({
     mode = "1650x1050@59.95400",
     position = "1920x0",
     scale = 1,
-    transform = 3,
+    transform = 1,
 })
 
