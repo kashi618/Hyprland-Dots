@@ -43,3 +43,6 @@
 !.config/nvim
 !.config/nvim/**/*
 
+## mangohud
+!.config/MangoHud
+!.config/MangoHud/**/*
