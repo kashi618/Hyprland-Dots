@@ -52,7 +52,6 @@ est. September 9th 2024
 - `dunst`
 - `rofi`
 - `kitty`
-- `nwg-look`
 
 ---
 
@@ -67,11 +66,12 @@ est. September 9th 2024
 - `man-db`
 - `tldr`
 
-#### Flatpak Management
+#### Package Management
 - `flatpak`
 - `bazaar`
+- `yay` **AUR**
 
-#### Terminal
+#### Misc
 - `neovim`
 - `git`
 
@@ -129,11 +129,11 @@ est. September 9th 2024
 - `vlc`
 - `vlc-plugins-all`
 - `fastfetch`
+- `nwg-look`
 
 ---
 
 ### Development
-- `yay` **AUR**
 - `github-desktop-bin` **AUR**
 - `visual-studio-code-bin` **AUR**
 
