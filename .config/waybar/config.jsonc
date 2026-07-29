@@ -122,7 +122,7 @@
     "format-connected": "<span color=\"#45bbff\">󰂰</span> [Paired - {device_battery_percentage}%]",
     "tooltip": true,
     "tooltip-format": "{device_alias}",
-    "on-click": "hyprctl dispatch exec '[float] blueman-manager'",
+    "on-click": "blueman-manager",
     "on-click-right": "~/.config/waybar/scripts/bluetooth/toggle-bluetooth.sh"
   }, // END "bluetooth"
 
@@ -199,7 +199,7 @@
     "format-ethernet": "<span color=\"#42ff42\"> </span>[{ifname}",
     "tooltip": true,
     "tooltip-format": " {bandwidthDownBytes}  {bandwidthUpBytes}",
-    "on-click": "hyprctl dispatch exec '[float] nm-connection-editor'",
+    "on-click": "nm-connection-editor", 
     "on-click-right": "~/.config/waybar/scripts/network/toggle-wifi.sh",
     "interval": 1
   }, // END "network" 
