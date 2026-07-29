@@ -7,176 +7,171 @@ est. September 9th 2024
 
 ![gif|100](https://i.imgur.com/IjMC3lS.gif)
 
-## Packages
-### Base Packages
-**Wifi and Bluetooth**
-- networkmanager (don't forget to `systemctl enable NetworkManager.service`)
-  - nm-connection-editor
-  - network-manager-applet
-- linux-wifi-hotspot ***AUR*
-- blueman (don't forget to `systemctl enable bluetooth.service`)
+## Essential Packages
 
-**Audio**
-- pipewire
-- pipewire-jack
-- pipewire-alsa
-- pipewire-pulse
-- wireplumber
-
-**Desktop Environment**
-- hyprland
-- hyprpaper (used for wallpaper)
-- hyprshot (used for screenshots) ***AUR**
-- hyprshell-bin (used for alt tab gui) ***AUR**
-
-**Notification Daemon**
-- dunst
-
-**Display Manager**
-- sddm (don't forget to `systemctl enable sddm.service`)
-
-**Backup Utility**
-- timeshift (timeshift-launcher for gui)
-  - xorg-xhost
-
-**Authentication Agent/secrets manager**
-- hyprpolkitagent
-- polkit
-- gnome-keyring
-
-**App Launcher**
-- ~~walker ***AUR**~~
-- rofi
-
-**Status Bar**
-- waybar (don't forget to `systemctl --user enable --now waybar.service`)
-
-**Terminal**
-- kitty (due to hyprland)
-
-**Fonts**
-- noto-fonts
-- noto-fonts-cjk
-- noto-fonts-emoji
-- noto-fonts-extra
-- adwaita-fonts
-- ttf-jetbrains-mono-nerd
-- ttf-liberation (contains Times New Roman, Arial, Courier New)
-
-**Obligatory Neofetch and Others**
-- ~~neofetch~~
-- fastfetch (neofetch is apparently dead :( )`
-- cmatrix
-- tty-clock ***AUR**
-- pipes.sh ***AUR**
-
-**Battery** (laptop)
-- ~~laptop-mode-tools ***AUR** (check installation on wiki page)~~
-- tlp (enable tlp.service)
-- gnome-power-statistics
-
-**Brightness** (laptop)
-- brightnessctl
-
-**Audio** (laptop -> thinkpad)
-- sof-firmware
+### WIFI & Bluetooth
+- `networkmanager`
+- `nm-connection-editor`
+- `network-manager-applet`
+- `blueman` 
+	-  `systemctl enable --now bluetooth.service`
+- `linux-wifi-hotspot` **AUR**
 
 ---
 
-### Misc Tools
-**Audio Related**
-- cable (used to configure pipewire) ***AUR**
-- pavucontrol (used to configure audio devices)
+### Audio
+#### Pipewire
+- `pipewire`
+- `pipewire-audio`
+- `pipewire-jack`
+- `pipewire-alsa`
+- `pipewire-pulse`
+- `lib32-pipewire`
+- `wireplumber`
 
-**File Manager**
-- thunar
-- thunar-volman (auto mount USB)
-- gvfs (handles trash, and a variety of others)
-- gvfs-mtp (auto mount android devices)
-- tumbler (for image thumbnails)
-
-**File Extractor**
-- 7zip
-- unzip
-
-- file-roller
-- ark
-- xarchiver
-
-*NOTE: Haven't decided on one that fits all my needs, so I have quite a few*
-
-**Videos**
-- vlc
-- vlc-plugins-all
-
-**GTK3 Theme**
-- nwg-look (for dark theme in thunar, etc)
-
-**AUR Helper**
-- yay ***AUR**
-
-**Task Manager**
-- btop
-
-**File Partition and Similar**
-- filelight
-
-**Flatpak Manager**
-- flatpak
-- bazaar
+#### Audio Utilities
+- `pavucontrol`
+- `qpwgraph`
 
 ---
 
-### Applications
-**Browser**
-- firefox
+### Hyprland
+#### Core
+- `hyprland`
+- `hyprpaper`
+- `hyprshot`
+- `hyprshell-bin` **AUR**
 
-**Gaming on Linux**
-- steam
-- heroic launcher (flatpak)
+#### Wayland Utilities
+- `xdg-desktop-portal-hyprland`
+- `wl-clipboard`
 
-Wine and proton
-- wine
-- winetricks
-- protonup-qt (used for proton-ge and steamtinkerlaunch) ***AUR**
-- steamtinkerlaunch (used for dependencies) ***AUR**
+#### UI
+- `waybar` (systemctl --user enable --now waybar.service)
+- `sddm` (systemctl enable --now sddm.service)
+- `dunst`
+- `rofi`
+- `kitty`
 
-Other (Non steam games. Not reccomended)
-- lutris
-- mangohud (fps counter)
-- goverlay (mangohud editor)
-- vulkan-tools
+---
 
-**Dev Tools & Text Editors**
-- vim
-- nano
-- git
+### System Utilities
+#### System Monitoring
+- `btop`
+- `mission-center`
+- `filelight`
 
-Other
-- visual-studio-code-bin ***AUR**
-- github-desktop-bin ***AUR**
-- eclipse-java-vin ***AUR**
+#### Documentation
+- `man`
+- `man-db`
+- `tldr`
 
-**LMM CLI Tool**
-- aichat
+#### Package Management
+- `flatpak`
+- `bazaar`
+- `yay` **AUR**
 
-**Other Tools**
-- man
-- tldr (man, but tldr)
-- ascii
+#### Misc
+- `neovim`
+- `git`
 
-**Misc**
-- discord
-  - xdg-desktop-portal-hyprland  (screenshare) 
-- spotify-launcher
-- qbittorrent
-- thunderbird
-- `ILoveCandy` in `/etc/pacman.conf [options]` ;)
-- libreoffice-fresh
-- obs-studio
-- obsidian
-- kolourpaint
-- mission-center
+---
+
+### Authentication & Secrets
+- `hyprpolkitagent`
+- `polkit`
+- `gnome-keyring`
+
+--- 
+### Fonts
+#### Core
+- `noto-fonts`
+- `noto-fonts-cjk`
+- `noto-fonts-emoji`
+- `noto-fonts-extra`
+
+#### Additional
+- `adwaita-fonts`
+- `ttf-jetbrains-mono-nerd`
+- `woff2-font-awesome`
+
+--- 
+### File Management
+#### File Manager
+- `thunar`
+
+#### Additional Utilities
+- `thunar-volman`
+- `thunar-archive-plugin`
+- `gvfs`
+- `gvfs-mtp`
+- `tumbler`
+
+### File Extraction & Compression
+- `ark`
+- `file-roller`
+- `xarchiver`
+- `7zip`
+- `unrar`
+
+---
+
+## Applications
+### Misc
+- `discord`
+- `firefox`
+- `spotify-launcher`
+- `qbittorrent`
+- `libreoffice-fresh`
+- `obs-studio`
+- `obsidian`
+- `kolourpaint`
+- `vlc`
+- `vlc-plugins-all`
+- `fastfetch`
+- `nwg-look`
+
+---
+
+### Development
+- `github-desktop-bin` **AUR**
+- `visual-studio-code-bin` **AUR**
+
+---
+
+### Linux Gaming/Wine & Proton
+#### Wine and Proton
+- `wine`
+- `winetricks`
+- `protonup-qt` **AUR**
+
+#### Gaming
+- `steam`
+- `heroic-games-launcher` **AUR**
+
+#### Gaming Utilities
+- `gamemode`
+	- usermod -aG gamemode kashi
+	- Add `gamemoderun` in launch options
+	- Not usable on MOST NVIDIA cards
+- `mangohud`
+- `optiscaler`
+	- Extract as into game binaries folder
+
+---
+
+## Laptop Specific Packages
+### General
+- `tlp` (systemctl enable --now tlp.service)
+- `brightnessctl`
+
+### Thinkpad
+- `sof-firmware`
+
+## Desktop Specific Packages
+- `openrgb`
+- `lact`
+- `coolercontrol` **AUR**
 
 ---
 
