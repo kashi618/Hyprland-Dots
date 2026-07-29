@@ -145,7 +145,7 @@ est. September 9th 2024
 - `winetricks`
 - `protonup-qt` **AUR**
 
-#### Gaming
+#### Game Stores and Launchers
 - `steam`
 - `heroic-games-launcher` **AUR**
 
@@ -157,6 +157,11 @@ est. September 9th 2024
 - `mangohud`
 - `optiscaler`
 	- Extract as into game binaries folder
+
+#### VR
+- wivrn-dashboard **AUR**
+- xrizer-git **AUR**
+- wayvr **AUR**
 
 ---
 
