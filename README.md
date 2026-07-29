@@ -151,8 +151,9 @@ est. September 9th 2024
 
 #### Gaming Utilities
 - `gamemode`
+	- usermod -aG gamemode kashi
 	- Add `gamemoderun` in launch options
-	- Not usable on NVIDIA cards
+	- Not usable on MOST NVIDIA cards
 - `mangohud`
 - `optiscaler`
 	- Extract as into game binaries folder
