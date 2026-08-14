@@ -59,7 +59,7 @@ est. September 9th 2024
 #### System Monitoring
 - `btop`
 - `mission-center`
-- `filelight`
+- `baobab`
 
 #### Documentation
 - `man`
@@ -125,7 +125,7 @@ est. September 9th 2024
 - `libreoffice-fresh`
 - `obs-studio`
 - `obsidian`
-- `kolourpaint`
+- `pinta`
 - `vlc`
 - `vlc-plugins-all`
 - `fastfetch`
