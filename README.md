@@ -106,6 +106,8 @@ est. September 9th 2024
 - `gvfs`
 - `gvfs-mtp`
 - `tumbler`
+- `totem`
+- `ffmpegthumbnailer`
 
 ### File Extraction & Compression
 - `ark`
