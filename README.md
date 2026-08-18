@@ -105,6 +105,7 @@ est. September 9th 2024
 - `thunar-archive-plugin`
 - `gvfs`
 - `gvfs-mtp`
+- `android-udev`
 - `tumbler`
 - `totem`
 - `ffmpegthumbnailer`
