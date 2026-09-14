@@ -9,8 +9,14 @@
 --monitor=eDP-1, 1920x1080@60.02000,0x0,1
 
 -- Thinkpad P14s Gen 6 - Laptop - Monitor Setup
---monitor=eDP-1, 2560x1600@90.00, 0x0, 1.25
---monitor=HDMI-A-1, 1920x1080@75.00,-1920x0,1
+--[[
+hl.monitor({
+    output = "eDP-1",
+    mode = "2560x1600@90",
+    position = "0x0",
+    scale = 1.25,
+})
+--]]
 
 -- GTX 1650 Super Desktop - Monitor Setup
 --monitor=HDMI-A-1, 1920x1080@75.00,0x400,1
@@ -33,6 +39,7 @@ hl.monitor({
 --]]
 
 -- archPPx9070XT
+--[[
 hl.monitor({
     output = "HDMI-A-1",
     mode = "1920x1080@75.00",
@@ -46,5 +53,5 @@ hl.monitor({
     scale = 1,
     transform = 1,
 })
-
+--]]
 
