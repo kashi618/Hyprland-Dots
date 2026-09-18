@@ -18,28 +18,10 @@
                         show_actions_submenu: true,
                     ),
                     terminal: (),
-                    shell: (),
-                    websearch: (
-                        engines: [
-                            (
-                                url: "https://www.google.com/search?q={}",
-                                name: "Google",
-                                key: 'g',
-                            ),
-                            (
-                                url: "https://en.wikipedia.org/wiki/Special:Search?search={}",
-                                name: "Wikipedia",
-                                key: 'w',
-                            ),
-                            (
-                                url: "https://www.reddit.com/search?q={}",
-                                name: "Reddit",
-                                key: 'r',
-                            ),
-                        ],
-                    ),
-                    calc: None,
-                    path: None,
+                    shell: None,
+                    websearch: None,
+                    calc: (),
+                    path: (),
                     actions: (
                         actions: [
                             lock_screen,
@@ -73,9 +55,18 @@
             top_offset: 430,
             modifier: "super",
             filter_by: [],
-            exclude_workspaces: "",
+            exclude_workspaces: "special:.*",
         ),
-        switch: None,
+        switch: (
+            modifier: "alt",
+            key: "Tab",
+            filter_by: [
+                current_monitor,
+            ],
+            switch_workspaces: false,
+            exclude_workspaces: "",
+            kill_key: 'q',
+        ),
         switch_2: None,
     ),
 )
