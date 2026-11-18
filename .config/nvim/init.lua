@@ -1,5 +1,6 @@
 -- Show line numbers
 vim.opt.number = true
+vim.opt.relativenumber = true
 
 -- Set tab space to 4
 vim.opt.tabstop = 4

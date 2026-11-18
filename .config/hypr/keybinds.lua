@@ -14,8 +14,6 @@ hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("firefox"))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("rofi -show drun"))
     -- Obsidian
 hl.bind(mainMod .. " + O", hl.dsp.exec_cmd("obsidian"))
-    -- Vscode
---   bind = $mainMod, V, exec, uwsm app -- code
     -- Discord
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd("discord"))
     -- Thunderbird
@@ -43,7 +41,7 @@ hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
     -- Toggle Pseudotiling
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
     -- Toggle Split
---bind = $mainMod, U, togglesplit, # dwindle
+hl.bind("SUPER + U", hl.dsp.layout("togglesplit"))
     -- Fullscreen
 hl.bind(mainMod .. " + M", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }))
 hl.bind(mainMod .. " + SHIFT + M", hl.dsp.window.fullscreen_state({ internal = 0, client = 2, action = "toggle" }))

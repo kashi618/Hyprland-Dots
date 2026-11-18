@@ -58,7 +58,8 @@ alias rr='exec bash'
 alias use='~/Documents/use-6.0.0/bin/use'
 alias pls='sudo'
 alias PLEASE='sudo'
-
+alias dieN="hyprshutdown -t 'Shutting down...' --post-cmd 'shutdown -P 0'"
+alias dieLO="hyprshutdown -t 'Shutting down...'"
 showoff() {
   hyprctl dispatch exec "[workspace 7] kitty"
   sleep 0.5
