@@ -16,6 +16,9 @@
 ## Bash Config
 !.bashrc
 
+## README
+!README.md
+
 ## Hyprshell
 !.config/hyprshell
 !.config/hyprshell/**/*
